@@ -1,0 +1,51 @@
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.csproj.AssemblyReference.cache
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.AssemblyInfoInputs.cache
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.AssemblyInfo.cs
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.csproj.CoreCompileInputs.cache
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.csproj.AssemblyReference.cache
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.AssemblyInfoInputs.cache
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.AssemblyInfo.cs
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.csproj.CoreCompileInputs.cache
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Data\bin\Debug\net7.0\Sakiny.Data.deps.json
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Data\bin\Debug\net7.0\Sakiny.Data.runtimeconfig.json
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Data\bin\Debug\net7.0\Sakiny.Data.dll
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Data\bin\Debug\net7.0\Sakiny.Data.pdb
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Data\bin\Debug\net7.0\Sakiny.Models.dll
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Data\bin\Debug\net7.0\Sakiny.Models.pdb
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.csproj.CopyComplete
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.dll
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Data\obj\Debug\net7.0\refint\Sakiny.Data.dll
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.pdb
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.genruntimeconfig.cache
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Data\obj\Debug\net7.0\ref\Sakiny.Data.dll
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Data\bin\Debug\net7.0\Sakiny.Data.deps.json
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Data\bin\Debug\net7.0\Sakiny.Data.runtimeconfig.json
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Data\bin\Debug\net7.0\Sakiny.Data.dll
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Data\bin\Debug\net7.0\Sakiny.Data.pdb
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Data\bin\Debug\net7.0\Sakiny.Models.dll
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Data\bin\Debug\net7.0\Sakiny.Models.pdb
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.csproj.CopyComplete
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.dll
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Data\obj\Debug\net7.0\refint\Sakiny.Data.dll
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.pdb
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.genruntimeconfig.cache
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Data\obj\Debug\net7.0\ref\Sakiny.Data.dll
+C:\Users\20106\Downloads\Sakiny\Sakiny.Data\bin\Debug\net7.0\Sakiny.Data.deps.json
+C:\Users\20106\Downloads\Sakiny\Sakiny.Data\bin\Debug\net7.0\Sakiny.Data.runtimeconfig.json
+C:\Users\20106\Downloads\Sakiny\Sakiny.Data\bin\Debug\net7.0\Sakiny.Data.dll
+C:\Users\20106\Downloads\Sakiny\Sakiny.Data\bin\Debug\net7.0\Sakiny.Data.pdb
+C:\Users\20106\Downloads\Sakiny\Sakiny.Data\bin\Debug\net7.0\Sakiny.Models.dll
+C:\Users\20106\Downloads\Sakiny\Sakiny.Data\bin\Debug\net7.0\Sakiny.Models.pdb
+C:\Users\20106\Downloads\Sakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.csproj.AssemblyReference.cache
+C:\Users\20106\Downloads\Sakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\20106\Downloads\Sakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.AssemblyInfoInputs.cache
+C:\Users\20106\Downloads\Sakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.AssemblyInfo.cs
+C:\Users\20106\Downloads\Sakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.csproj.CoreCompileInputs.cache
+C:\Users\20106\Downloads\Sakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.csproj.CopyComplete
+C:\Users\20106\Downloads\Sakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.dll
+C:\Users\20106\Downloads\Sakiny\Sakiny.Data\obj\Debug\net7.0\refint\Sakiny.Data.dll
+C:\Users\20106\Downloads\Sakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.pdb
+C:\Users\20106\Downloads\Sakiny\Sakiny.Data\obj\Debug\net7.0\Sakiny.Data.genruntimeconfig.cache
+C:\Users\20106\Downloads\Sakiny\Sakiny.Data\obj\Debug\net7.0\ref\Sakiny.Data.dll

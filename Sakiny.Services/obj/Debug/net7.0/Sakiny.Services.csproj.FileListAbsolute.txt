@@ -1,0 +1,42 @@
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Services\bin\Debug\net7.0\Sakiny.Services.deps.json
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Services\bin\Debug\net7.0\Sakiny.Services.runtimeconfig.json
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Services\bin\Debug\net7.0\Sakiny.Services.dll
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Services\bin\Debug\net7.0\Sakiny.Services.pdb
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.csproj.AssemblyReference.cache
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.AssemblyInfoInputs.cache
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.AssemblyInfo.cs
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.csproj.CoreCompileInputs.cache
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.dll
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Services\obj\Debug\net7.0\refint\Sakiny.Services.dll
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.pdb
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.genruntimeconfig.cache
+C:\Users\Electronica Care\Desktop\Sakiny\Sakiny.Services\obj\Debug\net7.0\ref\Sakiny.Services.dll
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Services\bin\Debug\net7.0\Sakiny.Services.deps.json
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Services\bin\Debug\net7.0\Sakiny.Services.runtimeconfig.json
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Services\bin\Debug\net7.0\Sakiny.Services.dll
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Services\bin\Debug\net7.0\Sakiny.Services.pdb
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.csproj.AssemblyReference.cache
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.AssemblyInfoInputs.cache
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.AssemblyInfo.cs
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.csproj.CoreCompileInputs.cache
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.dll
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Services\obj\Debug\net7.0\refint\Sakiny.Services.dll
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.pdb
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.genruntimeconfig.cache
+C:\Users\Electronica Care\Desktop\OldSakiny\Sakiny.Services\obj\Debug\net7.0\ref\Sakiny.Services.dll
+C:\Users\20106\Downloads\Sakiny\Sakiny.Services\bin\Debug\net7.0\Sakiny.Services.deps.json
+C:\Users\20106\Downloads\Sakiny\Sakiny.Services\bin\Debug\net7.0\Sakiny.Services.runtimeconfig.json
+C:\Users\20106\Downloads\Sakiny\Sakiny.Services\bin\Debug\net7.0\Sakiny.Services.dll
+C:\Users\20106\Downloads\Sakiny\Sakiny.Services\bin\Debug\net7.0\Sakiny.Services.pdb
+C:\Users\20106\Downloads\Sakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.csproj.AssemblyReference.cache
+C:\Users\20106\Downloads\Sakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\20106\Downloads\Sakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.AssemblyInfoInputs.cache
+C:\Users\20106\Downloads\Sakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.AssemblyInfo.cs
+C:\Users\20106\Downloads\Sakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.csproj.CoreCompileInputs.cache
+C:\Users\20106\Downloads\Sakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.dll
+C:\Users\20106\Downloads\Sakiny\Sakiny.Services\obj\Debug\net7.0\refint\Sakiny.Services.dll
+C:\Users\20106\Downloads\Sakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.pdb
+C:\Users\20106\Downloads\Sakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.genruntimeconfig.cache
+C:\Users\20106\Downloads\Sakiny\Sakiny.Services\obj\Debug\net7.0\ref\Sakiny.Services.dll
