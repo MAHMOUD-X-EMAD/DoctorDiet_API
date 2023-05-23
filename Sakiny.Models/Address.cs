@@ -7,13 +7,12 @@ using System.Threading.Tasks;
 
 namespace Sakiny.Models
 {
-    public class Address
+    public class Address: BaseModel
     {
-        public int Id { get; set; }
+        
         public string Street { get; set; }
         public string City { get; set; }
         public string PostalCode { get; set; }
-        [DefaultValue("false")]
-        public bool IsDeleted { get; set; }
+       
     }
 }

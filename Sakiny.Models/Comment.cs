@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Sakiny.Models
 {
-    public class Comment
+    public class Comment: BaseModel
     {
-        public int Id { get; set; }
+      
         [ForeignKey("Apartment")]
         public int ApartmentId { get; set; }
         [ForeignKey("User")]
@@ -21,7 +21,6 @@ namespace Sakiny.Models
         public virtual Apartment Apartment { get; set; }
         public virtual User User { get; set; }
 
-        [DefaultValue("false")]
-        public bool IsDeleted { get; set; }
+   
     }
 }

@@ -40,3 +40,17 @@ C:\Users\20106\Downloads\Sakiny\Sakiny.Services\obj\Debug\net7.0\refint\Sakiny.S
 C:\Users\20106\Downloads\Sakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.pdb
 C:\Users\20106\Downloads\Sakiny\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.genruntimeconfig.cache
 C:\Users\20106\Downloads\Sakiny\Sakiny.Services\obj\Debug\net7.0\ref\Sakiny.Services.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.Services\bin\Debug\net7.0\Sakiny.Services.deps.json
+D:\ITI-Tasks\Graduation Project\Sakiny.Services\bin\Debug\net7.0\Sakiny.Services.runtimeconfig.json
+D:\ITI-Tasks\Graduation Project\Sakiny.Services\bin\Debug\net7.0\Sakiny.Services.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.Services\bin\Debug\net7.0\Sakiny.Services.pdb
+D:\ITI-Tasks\Graduation Project\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.csproj.AssemblyReference.cache
+D:\ITI-Tasks\Graduation Project\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI-Tasks\Graduation Project\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.AssemblyInfoInputs.cache
+D:\ITI-Tasks\Graduation Project\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.AssemblyInfo.cs
+D:\ITI-Tasks\Graduation Project\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.csproj.CoreCompileInputs.cache
+D:\ITI-Tasks\Graduation Project\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.Services\obj\Debug\net7.0\refint\Sakiny.Services.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.pdb
+D:\ITI-Tasks\Graduation Project\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.genruntimeconfig.cache
+D:\ITI-Tasks\Graduation Project\Sakiny.Services\obj\Debug\net7.0\ref\Sakiny.Services.dll

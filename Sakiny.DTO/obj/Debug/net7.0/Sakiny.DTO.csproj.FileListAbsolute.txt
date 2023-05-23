@@ -40,3 +40,18 @@ C:\Users\20106\Downloads\Sakiny\Sakiny.DTO\obj\Debug\net7.0\Sakiny.DTO.dll
 C:\Users\20106\Downloads\Sakiny\Sakiny.DTO\obj\Debug\net7.0\refint\Sakiny.DTO.dll
 C:\Users\20106\Downloads\Sakiny\Sakiny.DTO\obj\Debug\net7.0\Sakiny.DTO.pdb
 C:\Users\20106\Downloads\Sakiny\Sakiny.DTO\obj\Debug\net7.0\ref\Sakiny.DTO.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.DTO\bin\Debug\net7.0\Sakiny.DTO.deps.json
+D:\ITI-Tasks\Graduation Project\Sakiny.DTO\bin\Debug\net7.0\Sakiny.DTO.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.DTO\bin\Debug\net7.0\Sakiny.DTO.pdb
+D:\ITI-Tasks\Graduation Project\Sakiny.DTO\bin\Debug\net7.0\Sakiny.Models.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.DTO\bin\Debug\net7.0\Sakiny.Models.pdb
+D:\ITI-Tasks\Graduation Project\Sakiny.DTO\obj\Debug\net7.0\Sakiny.DTO.csproj.AssemblyReference.cache
+D:\ITI-Tasks\Graduation Project\Sakiny.DTO\obj\Debug\net7.0\Sakiny.DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI-Tasks\Graduation Project\Sakiny.DTO\obj\Debug\net7.0\Sakiny.DTO.AssemblyInfoInputs.cache
+D:\ITI-Tasks\Graduation Project\Sakiny.DTO\obj\Debug\net7.0\Sakiny.DTO.AssemblyInfo.cs
+D:\ITI-Tasks\Graduation Project\Sakiny.DTO\obj\Debug\net7.0\Sakiny.DTO.csproj.CoreCompileInputs.cache
+D:\ITI-Tasks\Graduation Project\Sakiny.DTO\obj\Debug\net7.0\Sakiny.DTO.csproj.CopyComplete
+D:\ITI-Tasks\Graduation Project\Sakiny.DTO\obj\Debug\net7.0\Sakiny.DTO.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.DTO\obj\Debug\net7.0\refint\Sakiny.DTO.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.DTO\obj\Debug\net7.0\Sakiny.DTO.pdb
+D:\ITI-Tasks\Graduation Project\Sakiny.DTO\obj\Debug\net7.0\ref\Sakiny.DTO.dll

@@ -36,6 +36,7 @@ namespace WebApplication1.Controllers
                 ApplicationUser.UserName = registerUserDto.UserName;
                 ApplicationUser.Email = registerUserDto.Email;
                 ApplicationUser.ProfileImage = registerUserDto.ProfileImage;
+                ApplicationUser.ContactInfo = registerUserDto.ContactInfo;
                 ApplicationUser.IsDeleted = false;
                 IdentityResult result = await userManager.CreateAsync(ApplicationUser, registerUserDto.Password);
                 RegisterDto registerDto = new RegisterDto();
@@ -62,20 +63,21 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost("OwnerRegister")]
-        public async Task<IActionResult> OwnerRegister(RegisterUserDto registerUserDto)
+        public async Task<IActionResult> OwnerRegister(RegisterOwnerDto registerOwnerDto)
         {
             if (ModelState.IsValid)
             {
                 ApplicationUser ApplicationUser = new ApplicationUser();
-                ApplicationUser.FirstName = registerUserDto.FirstName;
-                ApplicationUser.LastName = registerUserDto.LastName;
-                ApplicationUser.Email = registerUserDto.Email;
-                ApplicationUser.Address = registerUserDto.Address;
-                ApplicationUser.UserName = registerUserDto.UserName;
-                ApplicationUser.Email = registerUserDto.Email;
-                ApplicationUser.ProfileImage = registerUserDto.ProfileImage;
+                ApplicationUser.FirstName = registerOwnerDto.FirstName;
+                ApplicationUser.LastName = registerOwnerDto.LastName;
+                ApplicationUser.Email = registerOwnerDto.Email;
+                ApplicationUser.Address = registerOwnerDto.Address;
+                ApplicationUser.UserName = registerOwnerDto.UserName;
+                ApplicationUser.Email = registerOwnerDto.Email;
+                ApplicationUser.ProfileImage = registerOwnerDto.ProfileImage;
+                ApplicationUser.ContactInfo = registerOwnerDto.ContactInfo;
                 ApplicationUser.IsDeleted = false;
-                IdentityResult result = await userManager.CreateAsync(ApplicationUser, registerUserDto.Password);
+                IdentityResult result = await userManager.CreateAsync(ApplicationUser, registerOwnerDto.Password);
                 RegisterDto registerDto = new RegisterDto();
 
                 if (result.Succeeded)
@@ -83,7 +85,7 @@ namespace WebApplication1.Controllers
                     await userManager.AddToRoleAsync(ApplicationUser, "Owner");
                     Owner owner = new Owner();
                     owner.ApplicationUserId = ApplicationUser.Id;
-                    owner.IdentityImage = registerUserDto.IdntityImage;
+                    owner.IdentityImage = registerOwnerDto.IdntityImage;
 
                     //  accountRepository.AddShipper(shipper);
                     registerDto.Message = "Success";
@@ -100,20 +102,20 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost("CookerRegister")]
-        public async Task<IActionResult> CookerRegister(RegisterUserDto registerUserDto)
+        public async Task<IActionResult> CookerRegister(RegisterCookerDto registerCookerDto)
         {
             if (ModelState.IsValid)
             {
                 ApplicationUser ApplicationUser = new ApplicationUser();
-                ApplicationUser.FirstName = registerUserDto.FirstName;
-                ApplicationUser.LastName = registerUserDto.LastName;
-                ApplicationUser.Email = registerUserDto.Email;
-                ApplicationUser.Address = registerUserDto.Address;
-                ApplicationUser.UserName = registerUserDto.UserName;
-                ApplicationUser.Email = registerUserDto.Email;
-                ApplicationUser.ProfileImage = registerUserDto.ProfileImage;
+                ApplicationUser.FirstName = registerCookerDto.FirstName;
+                ApplicationUser.LastName = registerCookerDto.LastName;
+                ApplicationUser.Email = registerCookerDto.Email;
+                ApplicationUser.Address = registerCookerDto.Address;
+                ApplicationUser.UserName = registerCookerDto.UserName;
+                ApplicationUser.ProfileImage = registerCookerDto.ProfileImage;
+                ApplicationUser.ContactInfo = registerCookerDto.ContactInfo;
                 ApplicationUser.IsDeleted = false;
-                IdentityResult result = await userManager.CreateAsync(ApplicationUser, registerUserDto.Password);
+                IdentityResult result = await userManager.CreateAsync(ApplicationUser, registerCookerDto.Password);
                 RegisterDto registerDto = new RegisterDto();
 
                 if (result.Succeeded)
@@ -121,7 +123,7 @@ namespace WebApplication1.Controllers
                     await userManager.AddToRoleAsync(ApplicationUser, "Cooker");
                     Cooker cooker = new Cooker();
                     cooker.ApplicationUserId = ApplicationUser.Id;
-                    cooker.Availability = registerUserDto.Availablility;
+                    cooker.Availability = registerCookerDto.Availablility;
 
                     //  accountRepository.AddShipper(shipper);
                     registerDto.Message = "Success";
@@ -138,20 +140,22 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost("AdminRegister")]
-        public async Task<IActionResult> AdminRegister(RegisterUserDto registerUserDto)
+        public async Task<IActionResult> AdminRegister(RegisterAdminDto registerAdminDto)
         {
             if (ModelState.IsValid)
             {
                 ApplicationUser ApplicationUser = new ApplicationUser();
-                ApplicationUser.FirstName = registerUserDto.FirstName;
-                ApplicationUser.LastName = registerUserDto.LastName;
-                ApplicationUser.Email = registerUserDto.Email;
-                ApplicationUser.Address = registerUserDto.Address;
-                ApplicationUser.UserName = registerUserDto.UserName;
-                ApplicationUser.Email = registerUserDto.Email;
-                ApplicationUser.ProfileImage = registerUserDto.ProfileImage;
+                ApplicationUser.FirstName = registerAdminDto.FirstName;
+                ApplicationUser.LastName = registerAdminDto.LastName;
+                ApplicationUser.Email = registerAdminDto.Email;
+                ApplicationUser.Address= registerAdminDto.Address;
+              
+                ApplicationUser.UserName = registerAdminDto.UserName;
+        
+                ApplicationUser.ProfileImage = registerAdminDto.ProfileImage;
+                ApplicationUser.ContactInfo = registerAdminDto.ContactInfo;
                 ApplicationUser.IsDeleted = false;
-                IdentityResult result = await userManager.CreateAsync(ApplicationUser, registerUserDto.Password);
+                IdentityResult result = await userManager.CreateAsync(ApplicationUser, registerAdminDto.Password);
                 RegisterDto registerDto = new RegisterDto();
 
                 if (result.Succeeded)

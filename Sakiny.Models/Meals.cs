@@ -8,15 +8,14 @@ using System.Threading.Tasks;
 
 namespace Sakiny.Models
 {
-    public class Meals
+    public class Meals: BaseModel
     {
-        public int Id { get; set; }
+    
         public string Image { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public double Price { get; set; }
 
-        [DefaultValue("false")]
-        public bool IsDeleted { get; set; }
+     
     }
 }

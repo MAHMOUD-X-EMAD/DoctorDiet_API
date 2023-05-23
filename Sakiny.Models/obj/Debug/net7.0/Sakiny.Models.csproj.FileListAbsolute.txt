@@ -54,3 +54,17 @@ C:\Users\20106\Downloads\Sakiny\Sakiny.Models\obj\Debug\net7.0\refint\Sakiny.Mod
 C:\Users\20106\Downloads\Sakiny\Sakiny.Models\obj\Debug\net7.0\Sakiny.Models.pdb
 C:\Users\20106\Downloads\Sakiny\Sakiny.Models\obj\Debug\net7.0\Sakiny.Models.genruntimeconfig.cache
 C:\Users\20106\Downloads\Sakiny\Sakiny.Models\obj\Debug\net7.0\ref\Sakiny.Models.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.Models\bin\Debug\net7.0\Sakiny.Models.deps.json
+D:\ITI-Tasks\Graduation Project\Sakiny.Models\bin\Debug\net7.0\Sakiny.Models.runtimeconfig.json
+D:\ITI-Tasks\Graduation Project\Sakiny.Models\bin\Debug\net7.0\Sakiny.Models.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.Models\bin\Debug\net7.0\Sakiny.Models.pdb
+D:\ITI-Tasks\Graduation Project\Sakiny.Models\obj\Debug\net7.0\Sakiny.Models.csproj.AssemblyReference.cache
+D:\ITI-Tasks\Graduation Project\Sakiny.Models\obj\Debug\net7.0\Sakiny.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI-Tasks\Graduation Project\Sakiny.Models\obj\Debug\net7.0\Sakiny.Models.AssemblyInfoInputs.cache
+D:\ITI-Tasks\Graduation Project\Sakiny.Models\obj\Debug\net7.0\Sakiny.Models.AssemblyInfo.cs
+D:\ITI-Tasks\Graduation Project\Sakiny.Models\obj\Debug\net7.0\Sakiny.Models.csproj.CoreCompileInputs.cache
+D:\ITI-Tasks\Graduation Project\Sakiny.Models\obj\Debug\net7.0\Sakiny.Models.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.Models\obj\Debug\net7.0\refint\Sakiny.Models.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.Models\obj\Debug\net7.0\Sakiny.Models.pdb
+D:\ITI-Tasks\Graduation Project\Sakiny.Models\obj\Debug\net7.0\Sakiny.Models.genruntimeconfig.cache
+D:\ITI-Tasks\Graduation Project\Sakiny.Models\obj\Debug\net7.0\ref\Sakiny.Models.dll

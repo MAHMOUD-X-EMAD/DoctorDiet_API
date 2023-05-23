@@ -4,9 +4,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Sakiny.Models
 {
-    public class Restaurant
+    public class Restaurant: BaseModel
     {
-        public int Id { get; set; }
+     
         [ForeignKey("Address")]
         public int AddressId { get; set; }
         public string Name { get; set; }
@@ -15,8 +15,7 @@ namespace Sakiny.Models
         public List<MenuImages> MenuImage { get; set; }
         public virtual Address Address { get; set; }
 
-        [DefaultValue("false")]
-        public bool IsDeleted { get; set; }
+      
 
     }
 }
