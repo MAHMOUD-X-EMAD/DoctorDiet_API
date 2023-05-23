@@ -1,11 +1,15 @@
 
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Sakiny.API.Config;
 using Sakiny.Data;
 using Sakiny.Models;
+using System.Diagnostics;
 using System.Text;
 
 namespace Sakiny.API
@@ -25,10 +29,16 @@ namespace Sakiny.API
 
             });
 
+            builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
+
+            builder.Host.ConfigureContainer<ContainerBuilder>(opt =>
+                opt.RegisterModule(new AutoFagModel()));
 
             builder.Services.AddDbContext<Context>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("cs"))
-            );
+                .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking)
+                .LogTo(log => Debug.WriteLine(log), LogLevel.Information)
+                .EnableSensitiveDataLogging());
 
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
               .AddEntityFrameworkStores<Context>()

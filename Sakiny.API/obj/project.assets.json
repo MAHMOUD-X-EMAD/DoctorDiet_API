@@ -2,6 +2,39 @@
   "version": 3,
   "targets": {
     "net7.0": {
+      "Autofac/7.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.DiagnosticSource": "4.7.1"
+        },
+        "compile": {
+          "lib/net7.0/Autofac.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Autofac.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Autofac.Extensions.DependencyInjection/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Autofac": "6.4.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Autofac.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Autofac.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "AutoMapper/12.0.1": {
         "type": "package",
         "dependencies": {
@@ -2124,6 +2157,47 @@
     }
   },
   "libraries": {
+    "Autofac/7.0.1": {
+      "sha512": "J9Iz0Q+YU3uf82i8Lee0NpQOlRYfwHxwVV26jdG3zH3LFE5Y9Rx97Mju7Nswwzh/C7kVJALkTL860Y7e+mcLaw==",
+      "type": "package",
+      "path": "autofac/7.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "autofac.7.0.1.nupkg.sha512",
+        "autofac.nuspec",
+        "icon.png",
+        "lib/net6.0/Autofac.dll",
+        "lib/net6.0/Autofac.xml",
+        "lib/net7.0/Autofac.dll",
+        "lib/net7.0/Autofac.xml",
+        "lib/netstandard2.0/Autofac.dll",
+        "lib/netstandard2.0/Autofac.xml",
+        "lib/netstandard2.1/Autofac.dll",
+        "lib/netstandard2.1/Autofac.xml"
+      ]
+    },
+    "Autofac.Extensions.DependencyInjection/8.0.0": {
+      "sha512": "nGrXNpQX2FiZpIBydK9cxZnnoqP/cUd3k/53uRERYEqLtWzKtE15R6L+j5q5ax5Rv/+3wAIkOaPePkahfqrwjg==",
+      "type": "package",
+      "path": "autofac.extensions.dependencyinjection/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+        "autofac.extensions.dependencyinjection.nuspec",
+        "icon.png",
+        "lib/net5.0/Autofac.Extensions.DependencyInjection.dll",
+        "lib/net5.0/Autofac.Extensions.DependencyInjection.xml",
+        "lib/net6.0/Autofac.Extensions.DependencyInjection.dll",
+        "lib/net6.0/Autofac.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.1/Autofac.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.1/Autofac.Extensions.DependencyInjection.xml"
+      ]
+    },
     "AutoMapper/12.0.1": {
       "sha512": "hvV62vl6Hp/WfQ24yzo3Co9+OPl8wH8hApwVtgWpiAynVJkUcs7xvehnSftawL8Pe8FrPffBRM3hwzLQqWDNjA==",
       "type": "package",
@@ -6382,6 +6456,8 @@
     "net7.0": [
       "AutoMapper >= 12.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
+      "Autofac >= 7.0.1",
+      "Autofac.Extensions.DependencyInjection >= 8.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.1",
       "Microsoft.EntityFrameworkCore >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.5",
@@ -6393,23 +6469,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Electronica Care\\.nuget\\packages\\": {},
+    "C:\\Users\\Al Lewaa Company\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ITI-Tasks\\Graduation Project\\Sakiny.API\\Sakiny.API.csproj",
+      "projectUniqueName": "F:\\iti_final2\\Sakiny.API\\Sakiny.API.csproj",
       "projectName": "Sakiny.API",
-      "projectPath": "D:\\ITI-Tasks\\Graduation Project\\Sakiny.API\\Sakiny.API.csproj",
-      "packagesPath": "C:\\Users\\Electronica Care\\.nuget\\packages\\",
-      "outputPath": "D:\\ITI-Tasks\\Graduation Project\\Sakiny.API\\obj\\",
+      "projectPath": "F:\\iti_final2\\Sakiny.API\\Sakiny.API.csproj",
+      "packagesPath": "C:\\Users\\Al Lewaa Company\\.nuget\\packages\\",
+      "outputPath": "F:\\iti_final2\\Sakiny.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Electronica Care\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Al Lewaa Company\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6424,11 +6500,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\ITI-Tasks\\Graduation Project\\Sakiny.Data\\Sakiny.Data.csproj": {
-              "projectPath": "D:\\ITI-Tasks\\Graduation Project\\Sakiny.Data\\Sakiny.Data.csproj"
+            "F:\\iti_final2\\Sakiny.Data\\Sakiny.Data.csproj": {
+              "projectPath": "F:\\iti_final2\\Sakiny.Data\\Sakiny.Data.csproj"
             },
-            "D:\\ITI-Tasks\\Graduation Project\\Sakiny.DTO\\Sakiny.DTO.csproj": {
-              "projectPath": "D:\\ITI-Tasks\\Graduation Project\\Sakiny.DTO\\Sakiny.DTO.csproj"
+            "F:\\iti_final2\\Sakiny.DTO\\Sakiny.DTO.csproj": {
+              "projectPath": "F:\\iti_final2\\Sakiny.DTO\\Sakiny.DTO.csproj"
             }
           }
         }
@@ -6450,6 +6526,14 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "[12.0.1, )"
+          },
+          "Autofac": {
+            "target": "Package",
+            "version": "[7.0.1, )"
+          },
+          "Autofac.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[8.0.0, )"
           },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
@@ -6499,7 +6583,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
