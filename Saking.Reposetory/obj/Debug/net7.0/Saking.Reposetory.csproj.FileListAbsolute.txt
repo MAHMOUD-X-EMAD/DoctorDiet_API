@@ -1,0 +1,12 @@
+D:\ITI-Tasks\Graduation Project\Saking.Reposetory\bin\Debug\net7.0\Saking.Reposetory.deps.json
+D:\ITI-Tasks\Graduation Project\Saking.Reposetory\bin\Debug\net7.0\Saking.Reposetory.dll
+D:\ITI-Tasks\Graduation Project\Saking.Reposetory\bin\Debug\net7.0\Saking.Reposetory.pdb
+D:\ITI-Tasks\Graduation Project\Saking.Reposetory\obj\Debug\net7.0\Saking.Reposetory.csproj.AssemblyReference.cache
+D:\ITI-Tasks\Graduation Project\Saking.Reposetory\obj\Debug\net7.0\Saking.Reposetory.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI-Tasks\Graduation Project\Saking.Reposetory\obj\Debug\net7.0\Saking.Reposetory.AssemblyInfoInputs.cache
+D:\ITI-Tasks\Graduation Project\Saking.Reposetory\obj\Debug\net7.0\Saking.Reposetory.AssemblyInfo.cs
+D:\ITI-Tasks\Graduation Project\Saking.Reposetory\obj\Debug\net7.0\Saking.Reposetory.csproj.CoreCompileInputs.cache
+D:\ITI-Tasks\Graduation Project\Saking.Reposetory\obj\Debug\net7.0\Saking.Reposetory.dll
+D:\ITI-Tasks\Graduation Project\Saking.Reposetory\obj\Debug\net7.0\refint\Saking.Reposetory.dll
+D:\ITI-Tasks\Graduation Project\Saking.Reposetory\obj\Debug\net7.0\Saking.Reposetory.pdb
+D:\ITI-Tasks\Graduation Project\Saking.Reposetory\obj\Debug\net7.0\ref\Saking.Reposetory.dll

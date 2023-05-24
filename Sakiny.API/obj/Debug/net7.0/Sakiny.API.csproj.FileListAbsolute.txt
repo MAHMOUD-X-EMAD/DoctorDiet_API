@@ -426,3 +426,7 @@ D:\ITI-Tasks\Graduation Project\Sakiny.API\obj\Debug\net7.0\refint\Sakiny.API.dl
 D:\ITI-Tasks\Graduation Project\Sakiny.API\obj\Debug\net7.0\Sakiny.API.pdb
 D:\ITI-Tasks\Graduation Project\Sakiny.API\obj\Debug\net7.0\Sakiny.API.genruntimeconfig.cache
 D:\ITI-Tasks\Graduation Project\Sakiny.API\obj\Debug\net7.0\ref\Sakiny.API.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.API\bin\Debug\net7.0\Autofac.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.API\bin\Debug\net7.0\Autofac.Extensions.DependencyInjection.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.API\bin\Debug\net7.0\Sakiny.Profiles.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.API\bin\Debug\net7.0\Sakiny.Profiles.pdb

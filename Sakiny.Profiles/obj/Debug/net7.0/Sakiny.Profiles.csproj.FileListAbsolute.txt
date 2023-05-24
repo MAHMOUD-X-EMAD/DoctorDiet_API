@@ -1,0 +1,17 @@
+D:\ITI-Tasks\Graduation Project\Sakiny.Profiles\bin\Debug\net7.0\Sakiny.Profiles.deps.json
+D:\ITI-Tasks\Graduation Project\Sakiny.Profiles\bin\Debug\net7.0\Sakiny.Profiles.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.Profiles\bin\Debug\net7.0\Sakiny.Profiles.pdb
+D:\ITI-Tasks\Graduation Project\Sakiny.Profiles\bin\Debug\net7.0\Sakiny.DTO.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.Profiles\bin\Debug\net7.0\Sakiny.Models.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.Profiles\bin\Debug\net7.0\Sakiny.DTO.pdb
+D:\ITI-Tasks\Graduation Project\Sakiny.Profiles\bin\Debug\net7.0\Sakiny.Models.pdb
+D:\ITI-Tasks\Graduation Project\Sakiny.Profiles\obj\Debug\net7.0\Sakiny.Profiles.csproj.AssemblyReference.cache
+D:\ITI-Tasks\Graduation Project\Sakiny.Profiles\obj\Debug\net7.0\Sakiny.Profiles.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI-Tasks\Graduation Project\Sakiny.Profiles\obj\Debug\net7.0\Sakiny.Profiles.AssemblyInfoInputs.cache
+D:\ITI-Tasks\Graduation Project\Sakiny.Profiles\obj\Debug\net7.0\Sakiny.Profiles.AssemblyInfo.cs
+D:\ITI-Tasks\Graduation Project\Sakiny.Profiles\obj\Debug\net7.0\Sakiny.Profiles.csproj.CoreCompileInputs.cache
+D:\ITI-Tasks\Graduation Project\Sakiny.Profiles\obj\Debug\net7.0\Sakiny.Profiles.csproj.CopyComplete
+D:\ITI-Tasks\Graduation Project\Sakiny.Profiles\obj\Debug\net7.0\Sakiny.Profiles.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.Profiles\obj\Debug\net7.0\refint\Sakiny.Profiles.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.Profiles\obj\Debug\net7.0\Sakiny.Profiles.pdb
+D:\ITI-Tasks\Graduation Project\Sakiny.Profiles\obj\Debug\net7.0\ref\Sakiny.Profiles.dll

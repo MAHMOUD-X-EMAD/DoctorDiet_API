@@ -28,6 +28,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Sakiny.Data\Sakiny.Data.csproj" />
     <ProjectReference Include="..\Sakiny.DTO\Sakiny.DTO.csproj" />
+    <ProjectReference Include="..\Sakiny.Profiles\Sakiny.Profiles.csproj" />
   </ItemGroup>
 
 </Project>

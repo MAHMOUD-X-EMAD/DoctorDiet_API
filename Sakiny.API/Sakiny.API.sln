@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sakiny.Data", "..\Sakiny.Da
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sakiny.DTO", "..\Sakiny.DTO\Sakiny.DTO.csproj", "{D974945D-A66D-4CDC-9745-4A80121FC5D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saking.Reposetory", "..\Saking.Reposetory\Saking.Reposetory.csproj", "{A148D69C-2803-493C-A58A-7FCAD53D3B87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Saking.Reposetory", "..\Saking.Reposetory\Saking.Reposetory.csproj", "{A148D69C-2803-493C-A58A-7FCAD53D3B87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sakiny.Profiles", "..\Sakiny.Profiles\Sakiny.Profiles.csproj", "{5BDD27FB-BE32-4136-B8A5-8F3010468EE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{A148D69C-2803-493C-A58A-7FCAD53D3B87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A148D69C-2803-493C-A58A-7FCAD53D3B87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A148D69C-2803-493C-A58A-7FCAD53D3B87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BDD27FB-BE32-4136-B8A5-8F3010468EE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BDD27FB-BE32-4136-B8A5-8F3010468EE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BDD27FB-BE32-4136-B8A5-8F3010468EE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BDD27FB-BE32-4136-B8A5-8F3010468EE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

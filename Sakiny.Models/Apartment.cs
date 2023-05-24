@@ -28,6 +28,7 @@ namespace Sakiny.Models
         public int numOfAvailableBeds { get; set; }
         public DateTime AvailableFrom { get; set; }
         public DateTime AvailableTo { get; set; }
+        public DateTime CreatedDate { get; set; }
         public virtual Aminities Aminities { get; set; }
         public virtual Owner Owner { get; set; }
         public virtual Address Address { get; set; }

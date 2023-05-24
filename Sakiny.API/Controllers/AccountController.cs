@@ -7,6 +7,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using AutoMapper;
 
 namespace WebApplication1.Controllers
 {
@@ -16,11 +17,12 @@ namespace WebApplication1.Controllers
     {
         private readonly UserManager<ApplicationUser> userManager;
         private readonly IConfiguration configuration;
-
-        public AccountController(UserManager<ApplicationUser> userManager, IConfiguration configuration)
+        private IMapper _mapper;
+        public AccountController(UserManager<ApplicationUser> userManager, IConfiguration configuration,IMapper mapper)
         {
             this.userManager = userManager;
             this.configuration = configuration;
+            _mapper=mapper;
         }
 
         [HttpPost("UserRegister")]
@@ -28,16 +30,8 @@ namespace WebApplication1.Controllers
         {
             if (ModelState.IsValid)
             {
-                ApplicationUser ApplicationUser = new ApplicationUser();
-                ApplicationUser.FirstName = registerUserDto.FirstName;
-                ApplicationUser.LastName = registerUserDto.LastName;
-                ApplicationUser.Email = registerUserDto.Email;
-                ApplicationUser.Address = registerUserDto.Address;
-                ApplicationUser.UserName = registerUserDto.UserName;
-                ApplicationUser.Email = registerUserDto.Email;
-                ApplicationUser.ProfileImage = registerUserDto.ProfileImage;
-                ApplicationUser.ContactInfo = registerUserDto.ContactInfo;
-                ApplicationUser.IsDeleted = false;
+                ApplicationUser ApplicationUser = _mapper.Map<ApplicationUser>(registerUserDto);
+
                 IdentityResult result = await userManager.CreateAsync(ApplicationUser, registerUserDto.Password);
                 RegisterDto registerDto = new RegisterDto();
 
@@ -67,16 +61,8 @@ namespace WebApplication1.Controllers
         {
             if (ModelState.IsValid)
             {
-                ApplicationUser ApplicationUser = new ApplicationUser();
-                ApplicationUser.FirstName = registerOwnerDto.FirstName;
-                ApplicationUser.LastName = registerOwnerDto.LastName;
-                ApplicationUser.Email = registerOwnerDto.Email;
-                ApplicationUser.Address = registerOwnerDto.Address;
-                ApplicationUser.UserName = registerOwnerDto.UserName;
-                ApplicationUser.Email = registerOwnerDto.Email;
-                ApplicationUser.ProfileImage = registerOwnerDto.ProfileImage;
-                ApplicationUser.ContactInfo = registerOwnerDto.ContactInfo;
-                ApplicationUser.IsDeleted = false;
+                ApplicationUser ApplicationUser = _mapper.Map<ApplicationUser>(registerOwnerDto);
+
                 IdentityResult result = await userManager.CreateAsync(ApplicationUser, registerOwnerDto.Password);
                 RegisterDto registerDto = new RegisterDto();
 
@@ -106,15 +92,8 @@ namespace WebApplication1.Controllers
         {
             if (ModelState.IsValid)
             {
-                ApplicationUser ApplicationUser = new ApplicationUser();
-                ApplicationUser.FirstName = registerCookerDto.FirstName;
-                ApplicationUser.LastName = registerCookerDto.LastName;
-                ApplicationUser.Email = registerCookerDto.Email;
-                ApplicationUser.Address = registerCookerDto.Address;
-                ApplicationUser.UserName = registerCookerDto.UserName;
-                ApplicationUser.ProfileImage = registerCookerDto.ProfileImage;
-                ApplicationUser.ContactInfo = registerCookerDto.ContactInfo;
-                ApplicationUser.IsDeleted = false;
+                ApplicationUser ApplicationUser = _mapper.Map<ApplicationUser>(registerCookerDto);
+
                 IdentityResult result = await userManager.CreateAsync(ApplicationUser, registerCookerDto.Password);
                 RegisterDto registerDto = new RegisterDto();
 
@@ -144,17 +123,8 @@ namespace WebApplication1.Controllers
         {
             if (ModelState.IsValid)
             {
-                ApplicationUser ApplicationUser = new ApplicationUser();
-                ApplicationUser.FirstName = registerAdminDto.FirstName;
-                ApplicationUser.LastName = registerAdminDto.LastName;
-                ApplicationUser.Email = registerAdminDto.Email;
-                ApplicationUser.Address= registerAdminDto.Address;
-              
-                ApplicationUser.UserName = registerAdminDto.UserName;
-        
-                ApplicationUser.ProfileImage = registerAdminDto.ProfileImage;
-                ApplicationUser.ContactInfo = registerAdminDto.ContactInfo;
-                ApplicationUser.IsDeleted = false;
+                ApplicationUser ApplicationUser = _mapper.Map<ApplicationUser>(registerAdminDto);
+
                 IdentityResult result = await userManager.CreateAsync(ApplicationUser, registerAdminDto.Password);
                 RegisterDto registerDto = new RegisterDto();
 

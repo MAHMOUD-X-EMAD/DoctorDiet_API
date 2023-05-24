@@ -9,6 +9,7 @@ using Microsoft.OpenApi.Models;
 using Sakiny.API.Config;
 using Sakiny.Data;
 using Sakiny.Models;
+using Sakiny.Profiles;
 using System.Diagnostics;
 using System.Text;
 
@@ -34,10 +35,18 @@ namespace Sakiny.API
             builder.Host.ConfigureContainer<ContainerBuilder>(opt =>
                 opt.RegisterModule(new AutoFagModel()));
 
+            builder.Services.AddAutoMapper(typeof(RegisterAdminProfile).Assembly);
+            builder.Services.AddAutoMapper(typeof(RegisterUserProfile).Assembly);
+            builder.Services.AddAutoMapper(typeof(RegisterOwnerProfile).Assembly);
+            builder.Services.AddAutoMapper(typeof(RegisterCookerProfile).Assembly);
+
+
+
+
             builder.Services.AddDbContext<Context>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("cs"))
                 .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking)
-                .LogTo(log => Debug.WriteLine(log), LogLevel.Information)
+                //.LogTo(log => Debug.WriteLine(log), LogLevel.Information)
                 .EnableSensitiveDataLogging());
 
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
