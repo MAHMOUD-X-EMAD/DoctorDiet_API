@@ -32,6 +32,7 @@ namespace Sakiny.Models
         public virtual Aminities Aminities { get; set; }
         public virtual Owner Owner { get; set; }
         public virtual Address Address { get; set; }
+        public bool Status { get; set; }
         public virtual List<ApartmentImages> ApartmentImages { get; set; }
       
     }

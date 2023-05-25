@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+
 using Microsoft.EntityFrameworkCore;
+using Sakiny.Data.Extentions;
 using Sakiny.Models;
 using System;
 using System.Collections.Generic;
@@ -29,6 +31,11 @@ namespace Sakiny.Data
         public DbSet<Menu> menus { get; set; }
         public DbSet<Meals> meals { get; set; }
         public DbSet<Aminities> aminities { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyGlobalFilter(x => !x.Deleted);
+        }
 
     }
 }
