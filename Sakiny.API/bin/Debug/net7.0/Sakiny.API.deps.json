@@ -17,9 +17,11 @@
           "Microsoft.EntityFrameworkCore.Design": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.5",
+          "Saking.Repository": "1.0.0",
           "Sakiny.DTO": "1.0.0",
           "Sakiny.Data": "1.0.0",
           "Sakiny.Profiles": "1.0.0",
+          "Sakiny.Services": "1.0.0",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
@@ -1131,6 +1133,18 @@
           }
         }
       },
+      "Saking.Repository/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "Sakiny.DTO": "1.0.0",
+          "Sakiny.Data": "1.0.0",
+          "Sakiny.Models": "1.0.0"
+        },
+        "runtime": {
+          "Saking.Repository.dll": {}
+        }
+      },
       "Sakiny.Data/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.5",
@@ -1174,6 +1188,19 @@
         },
         "runtime": {
           "Sakiny.Profiles.dll": {}
+        }
+      },
+      "Sakiny.Services/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "Microsoft.EntityFrameworkCore": "7.0.5",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
+          "Saking.Repository": "1.0.0",
+          "Sakiny.DTO": "1.0.0"
+        },
+        "runtime": {
+          "Sakiny.Services.dll": {}
         }
       }
     }
@@ -2045,6 +2072,11 @@
       "path": "zhiletime.hope.security/2.3.0",
       "hashPath": "zhiletime.hope.security.2.3.0.nupkg.sha512"
     },
+    "Saking.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Sakiny.Data/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -2061,6 +2093,11 @@
       "sha512": ""
     },
     "Sakiny.Profiles/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sakiny.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

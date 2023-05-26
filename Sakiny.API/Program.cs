@@ -33,13 +33,13 @@ namespace Sakiny.API
             builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
 
             builder.Host.ConfigureContainer<ContainerBuilder>(opt =>
-                opt.RegisterModule(new AutoFagModel()));
+                opt.RegisterModule(new AutoFacModule()));
 
             builder.Services.AddAutoMapper(typeof(RegisterAdminProfile).Assembly);
             builder.Services.AddAutoMapper(typeof(RegisterUserProfile).Assembly);
             builder.Services.AddAutoMapper(typeof(RegisterOwnerProfile).Assembly);
             builder.Services.AddAutoMapper(typeof(RegisterCookerProfile).Assembly);
-
+            builder.Services.AddAutoMapper(typeof(ReportCreateProfile).Assembly);
 
 
 

@@ -13,9 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sakiny.Data", "..\Sakiny.Da
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sakiny.DTO", "..\Sakiny.DTO\Sakiny.DTO.csproj", "{D974945D-A66D-4CDC-9745-4A80121FC5D1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Saking.Reposetory", "..\Saking.Reposetory\Saking.Reposetory.csproj", "{A148D69C-2803-493C-A58A-7FCAD53D3B87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Saking.Repository", "..\Saking.Reposetory\Saking.Repository.csproj", "{A148D69C-2803-493C-A58A-7FCAD53D3B87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sakiny.Profiles", "..\Sakiny.Profiles\Sakiny.Profiles.csproj", "{5BDD27FB-BE32-4136-B8A5-8F3010468EE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sakiny.Profiles", "..\Sakiny.Profiles\Sakiny.Profiles.csproj", "{5BDD27FB-BE32-4136-B8A5-8F3010468EE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

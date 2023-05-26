@@ -8,6 +8,8 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using AutoMapper;
+using Sakiny.Services;
+using Saking.Reposetory.UnitOfWork;
 
 namespace WebApplication1.Controllers
 {
@@ -18,11 +20,15 @@ namespace WebApplication1.Controllers
         private readonly UserManager<ApplicationUser> userManager;
         private readonly IConfiguration configuration;
         private IMapper _mapper;
-        public AccountController(UserManager<ApplicationUser> userManager, IConfiguration configuration,IMapper mapper)
+        private AccountService _accountService;
+        IUnitOfWork _unitOfWork;
+        public AccountController(UserManager<ApplicationUser> userManager, IConfiguration configuration,IMapper mapper, AccountService accountService, IUnitOfWork unitOfWork)
         {
             this.userManager = userManager;
             this.configuration = configuration;
             _mapper=mapper;
+            _accountService = accountService;
+            _unitOfWork = unitOfWork;
         }
 
         [HttpPost("UserRegister")]
@@ -42,7 +48,9 @@ namespace WebApplication1.Controllers
                     user.ApplicationUserId = ApplicationUser.Id;
                     user.NationalNumber = registerUserDto.NationalNumber;
 
-                  //  accountRepository.AddShipper(shipper);
+                    _accountService.AddUser(user);
+                    _unitOfWork.CommitChanges();
+
                     registerDto.Message = "Success";    
                     return Ok(registerDto);
                 }
@@ -73,7 +81,10 @@ namespace WebApplication1.Controllers
                     owner.ApplicationUserId = ApplicationUser.Id;
                     owner.IdentityImage = registerOwnerDto.IdntityImage;
 
-                    //  accountRepository.AddShipper(shipper);
+           
+                    _accountService.AddOwner(owner);
+                    _unitOfWork.SaveChanges();
+
                     registerDto.Message = "Success";
                     return Ok(registerDto);
                 }
@@ -104,7 +115,10 @@ namespace WebApplication1.Controllers
                     cooker.ApplicationUserId = ApplicationUser.Id;
                     cooker.Availability = registerCookerDto.Availablility;
 
-                    //  accountRepository.AddShipper(shipper);
+
+                    _accountService.AddCooker(cooker);
+                    _unitOfWork.CommitChanges();
+
                     registerDto.Message = "Success";
                     return Ok(registerDto);
                 }
@@ -133,9 +147,11 @@ namespace WebApplication1.Controllers
                     await userManager.AddToRoleAsync(ApplicationUser, "Admin");
                     Admin admin = new Admin();
                     admin.ApplicationUserId = ApplicationUser.Id;
-                    
 
-                    //  accountRepository.AddShipper(shipper);
+
+                    _accountService.AddAdmin(admin);
+                    _unitOfWork.CommitChanges();
+
                     registerDto.Message = "Success";
                     return Ok(registerDto);
                 }
