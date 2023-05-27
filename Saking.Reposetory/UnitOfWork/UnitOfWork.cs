@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Saking.Reposetory.UnitOfWork
+namespace Sakiny.Repository.UnitOfWork
 {
     public class UnitOfWork:IUnitOfWork
     {

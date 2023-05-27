@@ -10,16 +10,8 @@ using Sakiny.Models.Models_Images;
 
 namespace Sakiny.Models
 {
-    public class Owner
+    public class Owner:BaseUser
     {
-        [Key]
-        [ForeignKey("ApplicationUser")]
-        public string ApplicationUserId { get; set; }
-        public ApplicationUser ApplicationUser { get; set; }
-
-        [DefaultValue("false")]
-
         public OwnerImages IdentityImage { get; set; }
-        public bool IsDeleted { get; set; }
     }
 }

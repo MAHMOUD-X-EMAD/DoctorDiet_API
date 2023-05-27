@@ -66,6 +66,19 @@ namespace Sakiny.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "MealsImages",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    URL = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_MealsImages", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "menus",
                 columns: table => new
                 {
@@ -182,8 +195,8 @@ namespace Sakiny.Data.Migrations
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Price = table.Column<double>(type: "float", nullable: false),
-                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
-                    MenuId = table.Column<int>(type: "int", nullable: true)
+                    MenuId = table.Column<int>(type: "int", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -405,6 +418,8 @@ namespace Sakiny.Data.Migrations
                     numOfAvailableBeds = table.Column<int>(type: "int", nullable: false),
                     AvailableFrom = table.Column<DateTime>(type: "datetime2", nullable: false),
                     AvailableTo = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Status = table.Column<bool>(type: "bit", nullable: false),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
@@ -650,6 +665,9 @@ namespace Sakiny.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "meals");
+
+            migrationBuilder.DropTable(
+                name: "MealsImages");
 
             migrationBuilder.DropTable(
                 name: "MenuImages");

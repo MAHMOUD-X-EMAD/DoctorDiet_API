@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Sakiny.Models
 {
-    public class BaseModel
+    public class BaseModel 
     {
         public int Id { get; set; }
 

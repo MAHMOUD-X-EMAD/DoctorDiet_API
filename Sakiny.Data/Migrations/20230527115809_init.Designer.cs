@@ -12,8 +12,8 @@ using Sakiny.Data;
 namespace Sakiny.Data.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230526130141_init_4")]
-    partial class init_4
+    [Migration("20230527115809_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

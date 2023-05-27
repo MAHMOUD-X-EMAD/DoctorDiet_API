@@ -2,7 +2,7 @@
 using AutoMapper.QueryableExtensions;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Sakiny.Repository.Interfaces;
-using Saking.Reposetory.UnitOfWork;
+using Sakiny.Repository.UnitOfWork;
 using Sakiny.DTO;
 using Sakiny.Models;
 using System;

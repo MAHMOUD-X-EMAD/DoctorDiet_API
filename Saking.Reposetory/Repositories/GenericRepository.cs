@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Sakiny.Repository.Reposetories
 {
-    public class GenericRepository<T> : IGenericRepository<T> where T :BaseModel
+    public class GenericRepository<T> : IGenericRepository<T> where T : BaseModel , IBaseUser 
     {
         Context _context;
 

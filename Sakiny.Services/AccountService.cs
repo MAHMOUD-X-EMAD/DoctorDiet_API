@@ -1,5 +1,5 @@
 ﻿using Sakiny.Repository.Interfaces;
-using Saking.Reposetory.UnitOfWork;
+using Sakiny.Repository.UnitOfWork;
 using Sakiny.Models;
 using System;
 using System.Collections.Generic;

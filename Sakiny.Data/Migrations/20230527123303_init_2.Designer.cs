@@ -12,7 +12,7 @@ using Sakiny.Data;
 namespace Sakiny.Data.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230524152616_init_2")]
+    [Migration("20230527123303_init_2")]
     partial class init_2
     {
         /// <inheritdoc />
@@ -271,6 +271,9 @@ namespace Sakiny.Data.Migrations
                     b.Property<DateTime>("AvailableTo")
                         .HasColumnType("datetime2");
 
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -291,6 +294,9 @@ namespace Sakiny.Data.Migrations
 
                     b.Property<int>("Size")
                         .HasColumnType("int");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
 
                     b.Property<int>("numOfAvailableBeds")
                         .HasColumnType("int");
@@ -523,6 +529,23 @@ namespace Sakiny.Data.Migrations
                     b.HasIndex("ApartmentId");
 
                     b.ToTable("ApartmentImages");
+                });
+
+            modelBuilder.Entity("Sakiny.Models.Models_Images.MealsImages", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("URL")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("MealsImages");
                 });
 
             modelBuilder.Entity("Sakiny.Models.Models_Images.MenuImages", b =>
