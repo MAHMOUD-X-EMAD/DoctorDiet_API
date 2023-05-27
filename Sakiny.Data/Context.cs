@@ -20,7 +20,6 @@ namespace Sakiny.Data
         public Context(DbContextOptions dbContextOptions) : base(dbContextOptions) { }
 
         public DbSet<ApplicationUser> applicationUser { get; set; }
-        public DbSet<Address> address { get; set; }
         public DbSet<Admin> admin { get; set; }
         public DbSet<Owner> owners { get; set; }
         public DbSet<User> users { get; set; }
@@ -28,6 +27,7 @@ namespace Sakiny.Data
         public DbSet<Apartment> apartments { get; set; }
         public DbSet<Comment> comments { get; set; }
         public DbSet<Report> Reports { get; set; }
+        public DbSet<Address> address { get; set; }
         public DbSet<Restaurant> restaurants { get; set; }
         public DbSet<Menu> menus { get; set; }
         public DbSet<Meals> meals { get; set; }
@@ -41,8 +41,9 @@ namespace Sakiny.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-       
-           modelBuilder.ApplyGlobalFilter(x => !x.IsDeleted);
+
+            modelBuilder.ApplyGlobalFilter<IBaseModel<int>>(x => !x.IsDeleted);
+            modelBuilder.ApplyGlobalFilter<IBaseModel<string>>(x => !x.IsDeleted);
         }
 
     }

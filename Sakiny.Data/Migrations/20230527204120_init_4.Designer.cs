@@ -12,8 +12,8 @@ using Sakiny.Data;
 namespace Sakiny.Data.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230527115809_init")]
-    partial class init
+    [Migration("20230527204120_init_4")]
+    partial class init_4
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -188,13 +188,13 @@ namespace Sakiny.Data.Migrations
 
             modelBuilder.Entity("Sakiny.Models.Admin", b =>
                 {
-                    b.Property<string>("ApplicationUserId")
+                    b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.HasKey("ApplicationUserId");
+                    b.HasKey("Id");
 
                     b.ToTable("admin");
                 });
@@ -473,9 +473,6 @@ namespace Sakiny.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
                     b.Property<int?>("MenuId")
                         .HasColumnType("int");
 
@@ -500,9 +497,6 @@ namespace Sakiny.Data.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 
@@ -594,7 +588,7 @@ namespace Sakiny.Data.Migrations
 
             modelBuilder.Entity("Sakiny.Models.Owner", b =>
                 {
-                    b.Property<string>("ApplicationUserId")
+                    b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("IdentityImageId")
@@ -603,7 +597,7 @@ namespace Sakiny.Data.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.HasKey("ApplicationUserId");
+                    b.HasKey("Id");
 
                     b.HasIndex("IdentityImageId");
 
@@ -659,9 +653,6 @@ namespace Sakiny.Data.Migrations
                     b.Property<int>("AddressId")
                         .HasColumnType("int");
 
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
                     b.Property<string>("LogoImage")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -683,7 +674,7 @@ namespace Sakiny.Data.Migrations
 
             modelBuilder.Entity("Sakiny.Models.User", b =>
                 {
-                    b.Property<string>("ApplicationUserId")
+                    b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<bool>("IsDeleted")
@@ -693,7 +684,7 @@ namespace Sakiny.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ApplicationUserId");
+                    b.HasKey("Id");
 
                     b.ToTable("users");
                 });
@@ -753,7 +744,7 @@ namespace Sakiny.Data.Migrations
                 {
                     b.HasOne("Sakiny.Models.ApplicationUser", "ApplicationUser")
                         .WithMany()
-                        .HasForeignKey("ApplicationUserId")
+                        .HasForeignKey("Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -857,7 +848,7 @@ namespace Sakiny.Data.Migrations
                 {
                     b.HasOne("Sakiny.Models.ApplicationUser", "ApplicationUser")
                         .WithMany()
-                        .HasForeignKey("ApplicationUserId")
+                        .HasForeignKey("Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -906,7 +897,7 @@ namespace Sakiny.Data.Migrations
                 {
                     b.HasOne("Sakiny.Models.ApplicationUser", "ApplicationUser")
                         .WithMany()
-                        .HasForeignKey("ApplicationUserId")
+                        .HasForeignKey("Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

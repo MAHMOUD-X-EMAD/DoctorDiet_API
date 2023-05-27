@@ -5,14 +5,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace Sakiny.Services
 {
     public class OwnerService
     {
-        IGenericRepository<Owner> _repositry;
+        IGenericRepository<Owner,string> _repositry;
 
-     public OwnerService(IGenericRepository<Owner> Repositry)
+     public OwnerService(IGenericRepository<Owner,string> Repositry)
         {
 
             _repositry = Repositry;
@@ -23,7 +24,7 @@ namespace Sakiny.Services
         {
 
 
-            Owner owner = _repositry.Get(o => o.ApplicationUserId==id).FirstOrDefault();
+            Owner owner = _repositry.Get(o => o.Id==id).Include(x => x.ApplicationUser).FirstOrDefault();
             return owner;
 
         }

@@ -13,7 +13,7 @@ namespace Sakiny.API.Config
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType(typeof(Context)).InstancePerLifetimeScope();
-            builder.RegisterGeneric(typeof(GenericRepository<>)).As(typeof(IGenericRepository<>)).InstancePerLifetimeScope();
+            builder.RegisterGeneric(typeof(GenericRepository<,>)).As(typeof(IGenericRepository<,>)).InstancePerLifetimeScope();
             builder.RegisterType(typeof(CommentRepository)).As(typeof(ICommentRepository)).InstancePerLifetimeScope();
             builder.RegisterType(typeof(AccountRepository)).As(typeof(IAccountRepository)).InstancePerLifetimeScope();
             builder.RegisterType(typeof(UnitOfWork)).As(typeof(IUnitOfWork)).InstancePerLifetimeScope();
@@ -21,8 +21,6 @@ namespace Sakiny.API.Config
             builder.RegisterAssemblyTypes(typeof(AdminService).Assembly).InstancePerLifetimeScope();
             builder.RegisterAssemblyTypes(typeof(OwnerService).Assembly).InstancePerLifetimeScope();
             builder.RegisterAssemblyTypes(typeof(UserService).Assembly).InstancePerLifetimeScope();
-           // builder.RegisterType<GenericRepository<Owner>>().As<IGenericRepository<Owner>>();
-
             builder.RegisterAssemblyTypes(typeof(ReportService).Assembly).InstancePerLifetimeScope();
             builder.RegisterAssemblyTypes(typeof(CommentService).Assembly).InstancePerLifetimeScope();
 

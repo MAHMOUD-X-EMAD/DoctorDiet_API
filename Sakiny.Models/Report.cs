@@ -10,8 +10,9 @@ using System.Threading.Tasks;
 
 namespace Sakiny.Models
 {
-    public class Report :BaseModel
+    public class Report :IBaseModel<int>
     {
+        public int Id { get; set; }
         [ForeignKey("Apartment")]
         public int ApartmentId { get; set; }
         [ForeignKey("User")]
@@ -26,6 +27,5 @@ namespace Sakiny.Models
 
         [DefaultValue("false")]
         public bool IsDeleted { get; set; }
-
     }
 }

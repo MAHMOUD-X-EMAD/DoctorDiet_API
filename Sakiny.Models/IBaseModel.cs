@@ -7,11 +7,9 @@ using System.Threading.Tasks;
 
 namespace Sakiny.Models
 {
-    public class BaseModel 
+    public interface IBaseModel<T>
     {
-        public int Id { get; set; }
-
-        [DefaultValue("false")]
+        public T Id { get; set; }
         public bool IsDeleted { get; set; }
     }
 }

@@ -4,9 +4,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Sakiny.Models
 {
-    public class Restaurant: BaseModel
+    public class Restaurant//: BaseModel
     {
-     
+         public int Id { get; set; }
         [ForeignKey("Address")]
         public int AddressId { get; set; }
         public string Name { get; set; }

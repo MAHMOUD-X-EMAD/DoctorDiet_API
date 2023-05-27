@@ -7,16 +7,17 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace Sakiny.Data.Extentions
 {
     static class DbContextExtensions
     {
-        public static void ApplyGlobalFilter(this ModelBuilder modelBuilder, Expression<Func<BaseModel, bool>> filterExpression)
+        public static void ApplyGlobalFilter<T>(this ModelBuilder modelBuilder, Expression<Func<T, bool>> filterExpression)
         {
             foreach (var mutableEntityType in modelBuilder.Model.GetEntityTypes())
             {
-                if (mutableEntityType.ClrType.IsAssignableTo(typeof(BaseModel)))
+                if (mutableEntityType.ClrType.IsAssignableTo(typeof(T)))
                 {
                     var parameter = Expression.Parameter(mutableEntityType.ClrType);
                     var body = ReplacingExpressionVisitor.Replace(filterExpression.Parameters.First(), parameter, filterExpression.Body);
@@ -27,4 +28,4 @@ namespace Sakiny.Data.Extentions
             }
         }
     }
-}
+    }

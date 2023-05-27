@@ -15,10 +15,10 @@ namespace Sakiny.Services
 {
     public class ReportService
     {
-        IGenericRepository<Report> _repository;
+        IGenericRepository<Report,int> _repository;
         IUnitOfWork _unitOfWork;
         IMapper _mapper;
-        public ReportService(IGenericRepository<Report> repository, IUnitOfWork unitOfWork, IMapper mapper)
+        public ReportService(IGenericRepository<Report,int> repository, IUnitOfWork unitOfWork, IMapper mapper)
         {
             _repository=repository;
             _unitOfWork=unitOfWork;

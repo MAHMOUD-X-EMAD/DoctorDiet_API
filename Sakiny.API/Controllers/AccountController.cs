@@ -45,7 +45,7 @@ namespace WebApplication1.Controllers
                 {
                     await userManager.AddToRoleAsync(ApplicationUser, "User");
                     User user = new User();
-                    user.ApplicationUserId = ApplicationUser.Id;
+                    user.Id = ApplicationUser.Id;
                     user.NationalNumber = registerUserDto.NationalNumber;
 
                     _accountService.AddUser(user);
@@ -78,7 +78,7 @@ namespace WebApplication1.Controllers
                 {
                     await userManager.AddToRoleAsync(ApplicationUser, "Owner");
                     Owner owner = new Owner();
-                    owner.ApplicationUserId = ApplicationUser.Id;
+                    owner.Id = ApplicationUser.Id;
                     owner.IdentityImage = registerOwnerDto.IdntityImage;
 
            
@@ -146,7 +146,7 @@ namespace WebApplication1.Controllers
                 {
                     await userManager.AddToRoleAsync(ApplicationUser, "Admin");
                     Admin admin = new Admin();
-                    admin.ApplicationUserId = ApplicationUser.Id;
+                    admin.Id = ApplicationUser.Id;
 
 
                     _accountService.AddAdmin(admin);

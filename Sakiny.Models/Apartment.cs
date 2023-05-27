@@ -9,9 +9,10 @@ using Sakiny.Models.Models_Images;
 
 namespace Sakiny.Models
 {
-    public class Apartment: BaseModel
+    public class Apartment: IBaseModel<int>
     {
-       
+        public int Id { get; set; }
+
         [ForeignKey("Owner")]
         public string OwnerId { get; set; }
         [ForeignKey("Address")]
@@ -34,6 +35,9 @@ namespace Sakiny.Models
         public virtual Address Address { get; set; }
         public bool Status { get; set; }
         public virtual List<ApartmentImages> ApartmentImages { get; set; }
-      
+
+        [DefaultValue("false")]
+        public bool IsDeleted { get; set; }
+
     }
 }

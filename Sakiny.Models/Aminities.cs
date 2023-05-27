@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Sakiny.Models
 {
-    public class Aminities: BaseModel
+    public class Aminities: IBaseModel<int>
     {
-     
+        public int Id { get; set; }
         public bool WiFi { get; set; }
         public bool Cooker { get; set; }
         public bool Heater { get; set; }
@@ -21,6 +21,9 @@ namespace Sakiny.Models
         public bool Office { get; set; }
         public bool Cupboard { get; set; }
         public bool WashingMachine { get; set; }
-       
+
+        [DefaultValue("false")]
+        public bool IsDeleted { get; set; }
+
     }
 }

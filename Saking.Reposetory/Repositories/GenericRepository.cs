@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Sakiny.Repository.Reposetories
 {
-    public class GenericRepository<T> : IGenericRepository<T> where T : BaseModel , IBaseUser 
+    public class GenericRepository<T,Y> : IGenericRepository<T,Y> where T : class, IBaseModel<Y>
     {
         Context _context;
 
@@ -30,9 +30,9 @@ namespace Sakiny.Repository.Reposetories
             return _context.Set<T>().Where(expression);
         }
 
-        public T GetByID(int id)
+        public T GetByID(Y id)
         {
-            return _context.Set<T>().FirstOrDefault(x => x.Id == id);
+            return _context.Set<T>().FirstOrDefault(x => EqualityComparer<Y>.Default.Equals(x.Id, id));
         }
 
         public T Add(T entity)
@@ -50,7 +50,7 @@ namespace Sakiny.Repository.Reposetories
 
         public void Update(T entity, params string[] properties)
         {
-            var localEntity = _context.Set<T>().Local.Where(x => x.Id == entity.Id).FirstOrDefault();
+            var localEntity = _context.Set<T>().Local.Where(x => EqualityComparer<Y>.Default.Equals(x.Id, entity.Id)).FirstOrDefault();
 
             EntityEntry entityEntry;
 
@@ -62,7 +62,7 @@ namespace Sakiny.Repository.Reposetories
             {
                 entityEntry =
                     _context.ChangeTracker.Entries<T>()
-                    .Where(x => x.Entity.Id == entity.Id).FirstOrDefault();
+                    .Where(x => EqualityComparer<Y>.Default.Equals(x.Entity.Id, entity.Id)).FirstOrDefault();
             }
 
             foreach (var property in entityEntry.Properties)
@@ -76,7 +76,7 @@ namespace Sakiny.Repository.Reposetories
 
         }
 
-        public void Delete(int id)
+        public void Delete(Y id)
         {
             var entity = GetByID(id);
             entity.IsDeleted = true;

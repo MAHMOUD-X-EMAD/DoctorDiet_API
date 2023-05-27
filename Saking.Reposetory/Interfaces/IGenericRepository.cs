@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace Sakiny.Repository.Interfaces
 {
-    public interface IGenericRepository<T>
+    public interface IGenericRepository<T,Y>
     {
         IQueryable<T> GetAll();
         IQueryable<T> Get(Expression<Func<T, bool>> expression);
-        T GetByID(int id);
+        T GetByID(Y id);
         T Add(T entity);
         void Update(T entity);
         void Update(T entity, params string[] properties);
-        void Delete(int id);
+        void Delete(Y id);
     }
 }

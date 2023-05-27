@@ -46,7 +46,7 @@ namespace Sakiny.API
             builder.Services.AddDbContext<Context>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("cs"))
                 .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking)
-                //.LogTo(log => Debug.WriteLine(log), LogLevel.Information)
+                .LogTo(log => Debug.WriteLine(log), LogLevel.Information)
                 .EnableSensitiveDataLogging());
 
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
