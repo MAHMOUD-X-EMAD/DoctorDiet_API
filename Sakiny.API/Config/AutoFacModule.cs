@@ -1,9 +1,10 @@
 ﻿using Autofac;
 using Sakiny.Repository.Interfaces;
 using Sakiny.Repository.Reposetories;
-using Saking.Reposetory.UnitOfWork;
+using Sakiny.Repository.UnitOfWork;
 using Sakiny.Data;
 using Sakiny.Services;
+using Sakiny.Models;
 
 namespace Sakiny.API.Config
 {
@@ -19,7 +20,9 @@ namespace Sakiny.API.Config
             builder.RegisterAssemblyTypes(typeof(AccountService).Assembly).InstancePerLifetimeScope();
             builder.RegisterAssemblyTypes(typeof(AdminService).Assembly).InstancePerLifetimeScope();
             builder.RegisterAssemblyTypes(typeof(OwnerService).Assembly).InstancePerLifetimeScope();
-            builder.RegisterType<UserService>().InstancePerLifetimeScope();
+            builder.RegisterAssemblyTypes(typeof(UserService).Assembly).InstancePerLifetimeScope();
+           // builder.RegisterType<GenericRepository<Owner>>().As<IGenericRepository<Owner>>();
+
             builder.RegisterAssemblyTypes(typeof(ReportService).Assembly).InstancePerLifetimeScope();
             builder.RegisterAssemblyTypes(typeof(CommentService).Assembly).InstancePerLifetimeScope();
 

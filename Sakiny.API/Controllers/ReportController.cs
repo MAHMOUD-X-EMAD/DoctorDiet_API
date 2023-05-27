@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Saking.Reposetory.UnitOfWork;
+using Sakiny.Repository.UnitOfWork;
 using Sakiny.DTO;
 using Sakiny.Models;
 using Sakiny.Services;

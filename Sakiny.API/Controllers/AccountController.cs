@@ -9,7 +9,7 @@ using System.Security.Claims;
 using System.Text;
 using AutoMapper;
 using Sakiny.Services;
-using Saking.Reposetory.UnitOfWork;
+using Sakiny.Repository.UnitOfWork;
 
 namespace WebApplication1.Controllers
 {
@@ -83,7 +83,7 @@ namespace WebApplication1.Controllers
 
            
                     _accountService.AddOwner(owner);
-                    _unitOfWork.SaveChanges();
+                    _unitOfWork.CommitChanges();
 
                     registerDto.Message = "Success";
                     return Ok(registerDto);
