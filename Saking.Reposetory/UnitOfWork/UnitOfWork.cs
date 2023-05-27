@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Saking.Reposetory.UnitOfWork
 {
-    public class UnitOfWork
+    public class UnitOfWork:IUnitOfWork
     {
         Context _context;
 
@@ -43,7 +43,7 @@ namespace Saking.Reposetory.UnitOfWork
             }
         }
 
-        private void BeginTransaction()
+        public void BeginTransaction()
         {
             if (_context.Database.CurrentTransaction is null)
             {

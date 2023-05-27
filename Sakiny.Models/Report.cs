@@ -5,13 +5,13 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Sakiny.Models
 {
-    public class Report
+    public class Report :BaseModel
     {
-        public int Id { get; set; }
         [ForeignKey("Apartment")]
         public int ApartmentId { get; set; }
         [ForeignKey("User")]
@@ -21,6 +21,7 @@ namespace Sakiny.Models
         public string Status { get; set; }
 
         public virtual Apartment Apartment { get; set; }
+        
         public virtual User User { get; set; }
 
         [DefaultValue("false")]

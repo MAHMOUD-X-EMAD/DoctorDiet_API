@@ -8,5 +8,8 @@ namespace Saking.Reposetory.UnitOfWork
 {
     public interface IUnitOfWork
     {
+        void SaveChanges();
+        void CommitChanges();
+        void BeginTransaction();
     }
 }

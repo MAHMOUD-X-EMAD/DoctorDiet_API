@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
-using Saking.Reposetory.Interfaces;
 using Sakiny.Data;
 using Sakiny.Models;
+using Sakiny.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Saking.Reposetory.Reposetories
+namespace Sakiny.Repository.Reposetories
 {
     public class GenericRepository<T> : IGenericRepository<T> where T :BaseModel
     {

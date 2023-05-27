@@ -68,3 +68,12 @@ D:\saking22\Sakiny.Services\obj\Debug\net7.0\refint\Sakiny.Services.dll
 D:\saking22\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.pdb
 D:\saking22\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.genruntimeconfig.cache
 D:\saking22\Sakiny.Services\obj\Debug\net7.0\ref\Sakiny.Services.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.Services\bin\Debug\net7.0\Sakiny.Data.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.Services\bin\Debug\net7.0\Sakiny.Models.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.Services\bin\Debug\net7.0\Sakiny.Data.pdb
+D:\ITI-Tasks\Graduation Project\Sakiny.Services\bin\Debug\net7.0\Sakiny.Models.pdb
+D:\ITI-Tasks\Graduation Project\Sakiny.Services\obj\Debug\net7.0\Sakiny.Services.csproj.CopyComplete
+D:\ITI-Tasks\Graduation Project\Sakiny.Services\bin\Debug\net7.0\Sakiny.DTO.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.Services\bin\Debug\net7.0\Sakiny.DTO.pdb
+D:\ITI-Tasks\Graduation Project\Sakiny.Services\bin\Debug\net7.0\Sakiny.Repository.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.Services\bin\Debug\net7.0\Sakiny.Repository.pdb

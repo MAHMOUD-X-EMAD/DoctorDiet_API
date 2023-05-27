@@ -4,12 +4,12 @@
     "D:\\ITI-Tasks\\Graduation Project\\Sakiny.API\\Sakiny.API.csproj": {}
   },
   "projects": {
-    "D:\\ITI-Tasks\\Graduation Project\\Saking.Reposetory\\Saking.Repository.csproj": {
+    "D:\\ITI-Tasks\\Graduation Project\\Saking.Reposetory\\Sakiny.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ITI-Tasks\\Graduation Project\\Saking.Reposetory\\Saking.Repository.csproj",
-        "projectName": "Saking.Repository",
-        "projectPath": "D:\\ITI-Tasks\\Graduation Project\\Saking.Reposetory\\Saking.Repository.csproj",
+        "projectUniqueName": "D:\\ITI-Tasks\\Graduation Project\\Saking.Reposetory\\Sakiny.Repository.csproj",
+        "projectName": "Sakiny.Repository",
+        "projectPath": "D:\\ITI-Tasks\\Graduation Project\\Saking.Reposetory\\Sakiny.Repository.csproj",
         "packagesPath": "C:\\Users\\Electronica Care\\.nuget\\packages\\",
         "outputPath": "D:\\ITI-Tasks\\Graduation Project\\Saking.Reposetory\\obj\\",
         "projectStyle": "PackageReference",
@@ -111,8 +111,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\ITI-Tasks\\Graduation Project\\Saking.Reposetory\\Saking.Repository.csproj": {
-                "projectPath": "D:\\ITI-Tasks\\Graduation Project\\Saking.Reposetory\\Saking.Repository.csproj"
+              "D:\\ITI-Tasks\\Graduation Project\\Saking.Reposetory\\Sakiny.Repository.csproj": {
+                "projectPath": "D:\\ITI-Tasks\\Graduation Project\\Saking.Reposetory\\Sakiny.Repository.csproj"
               },
               "D:\\ITI-Tasks\\Graduation Project\\Sakiny.Data\\Sakiny.Data.csproj": {
                 "projectPath": "D:\\ITI-Tasks\\Graduation Project\\Sakiny.Data\\Sakiny.Data.csproj"
@@ -557,8 +557,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\ITI-Tasks\\Graduation Project\\Saking.Reposetory\\Saking.Repository.csproj": {
-                "projectPath": "D:\\ITI-Tasks\\Graduation Project\\Saking.Reposetory\\Saking.Repository.csproj"
+              "D:\\ITI-Tasks\\Graduation Project\\Saking.Reposetory\\Sakiny.Repository.csproj": {
+                "projectPath": "D:\\ITI-Tasks\\Graduation Project\\Saking.Reposetory\\Sakiny.Repository.csproj"
               },
               "D:\\ITI-Tasks\\Graduation Project\\Sakiny.DTO\\Sakiny.DTO.csproj": {
                 "projectPath": "D:\\ITI-Tasks\\Graduation Project\\Sakiny.DTO\\Sakiny.DTO.csproj"

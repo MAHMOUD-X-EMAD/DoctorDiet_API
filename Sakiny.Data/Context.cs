@@ -3,6 +3,7 @@
 using Microsoft.EntityFrameworkCore;
 using Sakiny.Data.Extentions;
 using Sakiny.Models;
+using Sakiny.Models.Models_Images;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,10 +32,17 @@ namespace Sakiny.Data
         public DbSet<Menu> menus { get; set; }
         public DbSet<Meals> meals { get; set; }
         public DbSet<Aminities> aminities { get; set; }
+        public DbSet<ApartmentImages> ApartmentImages { get; set; }
+        public DbSet<OwnerImages> OwnerImages { get; set; }
+        public DbSet<MenuImages> MenuImages { get; set; }
+        public DbSet<MealsImages> MealsImages { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyGlobalFilter(x => !x.Deleted);
+            base.OnModelCreating(modelBuilder);
+       
+           modelBuilder.ApplyGlobalFilter(x => !x.IsDeleted);
         }
 
     }

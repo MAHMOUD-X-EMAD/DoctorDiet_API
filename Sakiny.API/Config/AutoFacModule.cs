@@ -1,6 +1,6 @@
 ﻿using Autofac;
-using Saking.Reposetory.Interfaces;
-using Saking.Reposetory.Reposetories;
+using Sakiny.Repository.Interfaces;
+using Sakiny.Repository.Reposetories;
 using Saking.Reposetory.UnitOfWork;
 using Sakiny.Data;
 using Sakiny.Services;

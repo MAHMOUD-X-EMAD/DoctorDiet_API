@@ -2104,23 +2104,6 @@
           }
         }
       },
-      "Saking.Repository/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "AutoMapper": "12.0.1",
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
-          "Sakiny.DTO": "1.0.0",
-          "Sakiny.Data": "1.0.0",
-          "Sakiny.Models": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Saking.Repository.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Saking.Repository.dll": {}
-        }
-      },
       "Sakiny.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -2186,6 +2169,23 @@
           "bin/placeholder/Sakiny.Profiles.dll": {}
         }
       },
+      "Sakiny.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "Sakiny.DTO": "1.0.0",
+          "Sakiny.Data": "1.0.0",
+          "Sakiny.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sakiny.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sakiny.Repository.dll": {}
+        }
+      },
       "Sakiny.Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -2194,8 +2194,8 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
-          "Saking.Repository": "1.0.0",
-          "Sakiny.DTO": "1.0.0"
+          "Sakiny.DTO": "1.0.0",
+          "Sakiny.Repository": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Sakiny.Services.dll": {}
@@ -6486,11 +6486,6 @@
         "zhiletime.hope.security.nuspec"
       ]
     },
-    "Saking.Repository/1.0.0": {
-      "type": "project",
-      "path": "../Saking.Reposetory/Saking.Repository.csproj",
-      "msbuildProject": "../Saking.Reposetory/Saking.Repository.csproj"
-    },
     "Sakiny.Data/1.0.0": {
       "type": "project",
       "path": "../Sakiny.Data/Sakiny.Data.csproj",
@@ -6511,6 +6506,11 @@
       "path": "../Sakiny.Profiles/Sakiny.Profiles.csproj",
       "msbuildProject": "../Sakiny.Profiles/Sakiny.Profiles.csproj"
     },
+    "Sakiny.Repository/1.0.0": {
+      "type": "project",
+      "path": "../Saking.Reposetory/Sakiny.Repository.csproj",
+      "msbuildProject": "../Saking.Reposetory/Sakiny.Repository.csproj"
+    },
     "Sakiny.Services/1.0.0": {
       "type": "project",
       "path": "../Sakiny.Services/Sakiny.Services.csproj",
@@ -6528,10 +6528,10 @@
       "Microsoft.EntityFrameworkCore.Design >= 7.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.5",
-      "Saking.Repository >= 1.0.0",
       "Sakiny.DTO >= 1.0.0",
       "Sakiny.Data >= 1.0.0",
       "Sakiny.Profiles >= 1.0.0",
+      "Sakiny.Repository >= 1.0.0",
       "Sakiny.Services >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
@@ -6568,8 +6568,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\ITI-Tasks\\Graduation Project\\Saking.Reposetory\\Saking.Repository.csproj": {
-              "projectPath": "D:\\ITI-Tasks\\Graduation Project\\Saking.Reposetory\\Saking.Repository.csproj"
+            "D:\\ITI-Tasks\\Graduation Project\\Saking.Reposetory\\Sakiny.Repository.csproj": {
+              "projectPath": "D:\\ITI-Tasks\\Graduation Project\\Saking.Reposetory\\Sakiny.Repository.csproj"
             },
             "D:\\ITI-Tasks\\Graduation Project\\Sakiny.Data\\Sakiny.Data.csproj": {
               "projectPath": "D:\\ITI-Tasks\\Graduation Project\\Sakiny.Data\\Sakiny.Data.csproj"

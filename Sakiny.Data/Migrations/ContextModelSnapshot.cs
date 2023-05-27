@@ -292,6 +292,9 @@ namespace Sakiny.Data.Migrations
                     b.Property<int>("Size")
                         .HasColumnType("int");
 
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
                     b.Property<int>("numOfAvailableBeds")
                         .HasColumnType("int");
 
@@ -523,6 +526,23 @@ namespace Sakiny.Data.Migrations
                     b.HasIndex("ApartmentId");
 
                     b.ToTable("ApartmentImages");
+                });
+
+            modelBuilder.Entity("Sakiny.Models.Models_Images.MealsImages", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("URL")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("MealsImages");
                 });
 
             modelBuilder.Entity("Sakiny.Models.Models_Images.MenuImages", b =>

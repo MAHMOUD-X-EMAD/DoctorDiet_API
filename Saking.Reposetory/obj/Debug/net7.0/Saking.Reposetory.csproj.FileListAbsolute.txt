@@ -22,3 +22,10 @@ D:\saking22\Saking.Reposetory\obj\Debug\net7.0\Saking.Reposetory.dll
 D:\saking22\Saking.Reposetory\obj\Debug\net7.0\refint\Saking.Reposetory.dll
 D:\saking22\Saking.Reposetory\obj\Debug\net7.0\Saking.Reposetory.pdb
 D:\saking22\Saking.Reposetory\obj\Debug\net7.0\ref\Saking.Reposetory.dll
+D:\ITI-Tasks\Graduation Project\Saking.Reposetory\bin\Debug\net7.0\Sakiny.Data.dll
+D:\ITI-Tasks\Graduation Project\Saking.Reposetory\bin\Debug\net7.0\Sakiny.Models.dll
+D:\ITI-Tasks\Graduation Project\Saking.Reposetory\bin\Debug\net7.0\Sakiny.Data.pdb
+D:\ITI-Tasks\Graduation Project\Saking.Reposetory\bin\Debug\net7.0\Sakiny.Models.pdb
+D:\ITI-Tasks\Graduation Project\Saking.Reposetory\obj\Debug\net7.0\Saking.Reposetory.csproj.CopyComplete
+D:\ITI-Tasks\Graduation Project\Saking.Reposetory\bin\Debug\net7.0\Sakiny.DTO.dll
+D:\ITI-Tasks\Graduation Project\Saking.Reposetory\bin\Debug\net7.0\Sakiny.DTO.pdb

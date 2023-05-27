@@ -537,5 +537,5 @@ D:\saking22\Sakiny.API\obj\Debug\net7.0\Sakiny.API.genruntimeconfig.cache
 D:\saking22\Sakiny.API\obj\Debug\net7.0\ref\Sakiny.API.dll
 D:\ITI-Tasks\Graduation Project\Sakiny.API\bin\Debug\net7.0\Sakiny.Services.dll
 D:\ITI-Tasks\Graduation Project\Sakiny.API\bin\Debug\net7.0\Sakiny.Services.pdb
-D:\ITI-Tasks\Graduation Project\Sakiny.API\bin\Debug\net7.0\Saking.Repository.dll
-D:\ITI-Tasks\Graduation Project\Sakiny.API\bin\Debug\net7.0\Saking.Repository.pdb
+D:\ITI-Tasks\Graduation Project\Sakiny.API\bin\Debug\net7.0\Sakiny.Repository.dll
+D:\ITI-Tasks\Graduation Project\Sakiny.API\bin\Debug\net7.0\Sakiny.Repository.pdb
