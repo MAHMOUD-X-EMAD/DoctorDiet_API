@@ -5965,23 +5965,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Electronica Care\\.nuget\\packages\\": {},
+    "C:\\Users\\Al Lewaa Company\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ITI-Tasks\\Graduation Project\\Sakiny.Services\\Sakiny.Services.csproj",
+      "projectUniqueName": "D:\\pull_project\\Sakiny.Services\\Sakiny.Services.csproj",
       "projectName": "Sakiny.Services",
-      "projectPath": "D:\\ITI-Tasks\\Graduation Project\\Sakiny.Services\\Sakiny.Services.csproj",
-      "packagesPath": "C:\\Users\\Electronica Care\\.nuget\\packages\\",
-      "outputPath": "D:\\ITI-Tasks\\Graduation Project\\Sakiny.Services\\obj\\",
+      "projectPath": "D:\\pull_project\\Sakiny.Services\\Sakiny.Services.csproj",
+      "packagesPath": "C:\\Users\\Al Lewaa Company\\.nuget\\packages\\",
+      "outputPath": "D:\\pull_project\\Sakiny.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Electronica Care\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Al Lewaa Company\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5996,11 +5996,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\ITI-Tasks\\Graduation Project\\Saking.Reposetory\\Sakiny.Repository.csproj": {
-              "projectPath": "D:\\ITI-Tasks\\Graduation Project\\Saking.Reposetory\\Sakiny.Repository.csproj"
+            "D:\\pull_project\\Saking.Reposetory\\Sakiny.Repository.csproj": {
+              "projectPath": "D:\\pull_project\\Saking.Reposetory\\Sakiny.Repository.csproj"
             },
-            "D:\\ITI-Tasks\\Graduation Project\\Sakiny.DTO\\Sakiny.DTO.csproj": {
-              "projectPath": "D:\\ITI-Tasks\\Graduation Project\\Sakiny.DTO\\Sakiny.DTO.csproj"
+            "D:\\pull_project\\Sakiny.DTO\\Sakiny.DTO.csproj": {
+              "projectPath": "D:\\pull_project\\Sakiny.DTO\\Sakiny.DTO.csproj"
             }
           }
         }
@@ -6054,7 +6054,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

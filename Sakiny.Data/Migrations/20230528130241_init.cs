@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Sakiny.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class init_4 : Migration
+    public partial class init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -71,7 +71,8 @@ namespace Sakiny.Data.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    URL = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    URL = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -96,6 +97,7 @@ namespace Sakiny.Data.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
                     URL = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
@@ -377,6 +379,7 @@ namespace Sakiny.Data.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
                     URL = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     MenuId = table.Column<int>(type: "int", nullable: true),
                     RestaurantId = table.Column<int>(type: "int", nullable: true)
@@ -448,6 +451,7 @@ namespace Sakiny.Data.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
                     URL = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ApartmentId = table.Column<int>(type: "int", nullable: true)
                 },

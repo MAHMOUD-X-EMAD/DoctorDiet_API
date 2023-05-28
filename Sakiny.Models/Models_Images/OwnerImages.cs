@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Sakiny.Models.Models_Images
 {
-    public class OwnerImages
+    public class OwnerImages:IBaseModel<int>
     {
         public int Id { get; set; }
+        public bool IsDeleted { get; set; }
         public string URL { get; set; }
 
 

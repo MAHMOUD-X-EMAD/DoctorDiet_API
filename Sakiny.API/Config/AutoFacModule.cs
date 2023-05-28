@@ -23,6 +23,8 @@ namespace Sakiny.API.Config
             builder.RegisterAssemblyTypes(typeof(UserService).Assembly).InstancePerLifetimeScope();
             builder.RegisterAssemblyTypes(typeof(ReportService).Assembly).InstancePerLifetimeScope();
             builder.RegisterAssemblyTypes(typeof(CommentService).Assembly).InstancePerLifetimeScope();
+            builder.RegisterAssemblyTypes(typeof(ApartmentImageService).Assembly).InstancePerLifetimeScope();
+            builder.RegisterAssemblyTypes(typeof(ApartmentService).Assembly).InstancePerLifetimeScope();
 
         }
     }

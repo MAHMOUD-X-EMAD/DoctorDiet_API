@@ -12,8 +12,8 @@ using Sakiny.Data;
 namespace Sakiny.Data.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230527205921_init_5")]
-    partial class init_5
+    [Migration("20230528130241_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -514,6 +514,9 @@ namespace Sakiny.Data.Migrations
                     b.Property<int?>("ApartmentId")
                         .HasColumnType("int");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<string>("URL")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -533,6 +536,9 @@ namespace Sakiny.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<string>("URL")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -549,6 +555,9 @@ namespace Sakiny.Data.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
 
                     b.Property<int?>("MenuId")
                         .HasColumnType("int");
@@ -576,6 +585,9 @@ namespace Sakiny.Data.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
 
                     b.Property<string>("URL")
                         .IsRequired()

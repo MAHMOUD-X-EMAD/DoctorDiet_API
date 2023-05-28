@@ -12,8 +12,8 @@ using Sakiny.Data;
 namespace Sakiny.Data.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230527204120_init_4")]
-    partial class init_4
+    [Migration("20230528212908_init_1")]
+    partial class init_1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -511,8 +511,11 @@ namespace Sakiny.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("ApartmentId")
+                    b.Property<int>("ApartmentId")
                         .HasColumnType("int");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
 
                     b.Property<string>("URL")
                         .IsRequired()
@@ -533,6 +536,9 @@ namespace Sakiny.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<string>("URL")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -549,6 +555,9 @@ namespace Sakiny.Data.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
 
                     b.Property<int?>("MenuId")
                         .HasColumnType("int");
@@ -576,6 +585,9 @@ namespace Sakiny.Data.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
 
                     b.Property<string>("URL")
                         .IsRequired()
@@ -828,9 +840,13 @@ namespace Sakiny.Data.Migrations
 
             modelBuilder.Entity("Sakiny.Models.Models_Images.ApartmentImages", b =>
                 {
-                    b.HasOne("Sakiny.Models.Apartment", null)
+                    b.HasOne("Sakiny.Models.Apartment", "Apartment")
                         .WithMany("ApartmentImages")
-                        .HasForeignKey("ApartmentId");
+                        .HasForeignKey("ApartmentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Apartment");
                 });
 
             modelBuilder.Entity("Sakiny.Models.Models_Images.MenuImages", b =>

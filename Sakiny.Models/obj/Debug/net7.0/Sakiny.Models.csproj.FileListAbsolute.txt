@@ -82,3 +82,17 @@ D:\saking22\Sakiny.Models\obj\Debug\net7.0\refint\Sakiny.Models.dll
 D:\saking22\Sakiny.Models\obj\Debug\net7.0\Sakiny.Models.pdb
 D:\saking22\Sakiny.Models\obj\Debug\net7.0\Sakiny.Models.genruntimeconfig.cache
 D:\saking22\Sakiny.Models\obj\Debug\net7.0\ref\Sakiny.Models.dll
+D:\pull_project\Sakiny.Models\bin\Debug\net7.0\Sakiny.Models.deps.json
+D:\pull_project\Sakiny.Models\bin\Debug\net7.0\Sakiny.Models.runtimeconfig.json
+D:\pull_project\Sakiny.Models\bin\Debug\net7.0\Sakiny.Models.dll
+D:\pull_project\Sakiny.Models\bin\Debug\net7.0\Sakiny.Models.pdb
+D:\pull_project\Sakiny.Models\obj\Debug\net7.0\Sakiny.Models.csproj.AssemblyReference.cache
+D:\pull_project\Sakiny.Models\obj\Debug\net7.0\Sakiny.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\pull_project\Sakiny.Models\obj\Debug\net7.0\Sakiny.Models.AssemblyInfoInputs.cache
+D:\pull_project\Sakiny.Models\obj\Debug\net7.0\Sakiny.Models.AssemblyInfo.cs
+D:\pull_project\Sakiny.Models\obj\Debug\net7.0\Sakiny.Models.csproj.CoreCompileInputs.cache
+D:\pull_project\Sakiny.Models\obj\Debug\net7.0\Sakiny.Models.dll
+D:\pull_project\Sakiny.Models\obj\Debug\net7.0\refint\Sakiny.Models.dll
+D:\pull_project\Sakiny.Models\obj\Debug\net7.0\Sakiny.Models.pdb
+D:\pull_project\Sakiny.Models\obj\Debug\net7.0\Sakiny.Models.genruntimeconfig.cache
+D:\pull_project\Sakiny.Models\obj\Debug\net7.0\ref\Sakiny.Models.dll

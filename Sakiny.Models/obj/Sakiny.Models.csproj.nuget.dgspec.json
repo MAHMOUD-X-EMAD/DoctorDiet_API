@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ITI-Tasks\\Graduation Project\\Sakiny.Models\\Sakiny.Models.csproj": {}
+    "D:\\pull_project\\Sakiny.Models\\Sakiny.Models.csproj": {}
   },
   "projects": {
-    "D:\\ITI-Tasks\\Graduation Project\\Sakiny.Models\\Sakiny.Models.csproj": {
+    "D:\\pull_project\\Sakiny.Models\\Sakiny.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ITI-Tasks\\Graduation Project\\Sakiny.Models\\Sakiny.Models.csproj",
+        "projectUniqueName": "D:\\pull_project\\Sakiny.Models\\Sakiny.Models.csproj",
         "projectName": "Sakiny.Models",
-        "projectPath": "D:\\ITI-Tasks\\Graduation Project\\Sakiny.Models\\Sakiny.Models.csproj",
-        "packagesPath": "C:\\Users\\Electronica Care\\.nuget\\packages\\",
-        "outputPath": "D:\\ITI-Tasks\\Graduation Project\\Sakiny.Models\\obj\\",
+        "projectPath": "D:\\pull_project\\Sakiny.Models\\Sakiny.Models.csproj",
+        "packagesPath": "C:\\Users\\Al Lewaa Company\\.nuget\\packages\\",
+        "outputPath": "D:\\pull_project\\Sakiny.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Electronica Care\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Al Lewaa Company\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -91,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
