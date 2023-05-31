@@ -1,15 +1,16 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Sakiny.DTO;
-using Sakiny.Models;
+//using DoctorDiet.DTO;
+using DoctorDiet.Models;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using AutoMapper;
-using Sakiny.Services;
-using Sakiny.Repository.UnitOfWork;
+using DoctorDiet.Services;
+using DoctorDiet.Repository.UnitOfWork;
+using DoctorDiet.Models;
 
 namespace WebApplication1.Controllers
 {
@@ -31,7 +32,7 @@ namespace WebApplication1.Controllers
             _unitOfWork = unitOfWork;
         }
 
-        [HttpPost("UserRegister")]
+        /*[HttpPost("UserRegister")]
         public async Task<IActionResult> UserRegister(RegisterUserDto registerUserDto)
         {
             if (ModelState.IsValid)
@@ -216,7 +217,7 @@ namespace WebApplication1.Controllers
             {
                 return BadRequest(ModelState);
             }
-        }
+        }*/
     }
 
 }

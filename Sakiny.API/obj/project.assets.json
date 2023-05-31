@@ -2104,42 +2104,11 @@
           }
         }
       },
-      "Sakiny.Data/1.0.0": {
+      "DoctorDiet.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.5",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.5",
-          "Microsoft.EntityFrameworkCore": "7.0.5",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
-          "Microsoft.Extensions.Identity.Core": "7.0.5",
-          "Sakiny.Models": "1.0.0",
-          "ZhileTime.Hope.AspNetCore.Authentication.JwtBearer": "2.3.0"
-        },
-        "compile": {
-          "bin/placeholder/Sakiny.Data.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Sakiny.Data.dll": {}
-        }
-      },
-      "Sakiny.DTO/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Sakiny.Models": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Sakiny.DTO.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Sakiny.DTO.dll": {}
-        }
-      },
-      "Sakiny.Models/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
+          "DoctorDiet.Models": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore": "7.0.5",
@@ -2148,60 +2117,76 @@
           "ZhileTime.Hope.AspNetCore.Authentication.JwtBearer": "2.3.0"
         },
         "compile": {
-          "bin/placeholder/Sakiny.Models.dll": {}
+          "bin/placeholder/DoctorDiet.Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Sakiny.Models.dll": {}
+          "bin/placeholder/DoctorDiet.Data.dll": {}
         }
       },
-      "Sakiny.Profiles/1.0.0": {
+      "DoctorDiet.DTO/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "AutoMapper": "12.0.1",
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
-          "Sakiny.DTO": "1.0.0"
+          "DoctorDiet.Models": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Sakiny.Profiles.dll": {}
+          "bin/placeholder/DoctorDiet.DTO.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Sakiny.Profiles.dll": {}
+          "bin/placeholder/DoctorDiet.DTO.dll": {}
         }
       },
-      "Sakiny.Repository/1.0.0": {
+      "DoctorDiet.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "AutoMapper": "12.0.1",
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
-          "Sakiny.DTO": "1.0.0",
-          "Sakiny.Data": "1.0.0",
-          "Sakiny.Models": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Sakiny.Repository.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Sakiny.Repository.dll": {}
-        }
-      },
-      "Sakiny.Services/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "AutoMapper": "12.0.1",
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.5",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
-          "Sakiny.DTO": "1.0.0",
-          "Sakiny.Repository": "1.0.0"
+          "Microsoft.Extensions.Identity.Core": "7.0.5",
+          "ZhileTime.Hope.AspNetCore.Authentication.JwtBearer": "2.3.0"
         },
         "compile": {
-          "bin/placeholder/Sakiny.Services.dll": {}
+          "bin/placeholder/DoctorDiet.Models.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Sakiny.Services.dll": {}
+          "bin/placeholder/DoctorDiet.Models.dll": {}
+        }
+      },
+      "DoctorDiet.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "DoctorDiet.DTO": "1.0.0",
+          "DoctorDiet.Data": "1.0.0",
+          "DoctorDiet.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DoctorDiet.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DoctorDiet.Repository.dll": {}
+        }
+      },
+      "DoctorDiet.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "DoctorDiet.DTO": "1.0.0",
+          "DoctorDiet.Repository": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.5",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5"
+        },
+        "compile": {
+          "bin/placeholder/DoctorDiet.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DoctorDiet.Services.dll": {}
         }
       }
     }
@@ -6486,35 +6471,30 @@
         "zhiletime.hope.security.nuspec"
       ]
     },
-    "Sakiny.Data/1.0.0": {
+    "DoctorDiet.Data/1.0.0": {
       "type": "project",
-      "path": "../Sakiny.Data/Sakiny.Data.csproj",
-      "msbuildProject": "../Sakiny.Data/Sakiny.Data.csproj"
+      "path": "../Sakiny.Data/DoctorDiet.Data.csproj",
+      "msbuildProject": "../Sakiny.Data/DoctorDiet.Data.csproj"
     },
-    "Sakiny.DTO/1.0.0": {
+    "DoctorDiet.DTO/1.0.0": {
       "type": "project",
-      "path": "../Sakiny.DTO/Sakiny.DTO.csproj",
-      "msbuildProject": "../Sakiny.DTO/Sakiny.DTO.csproj"
+      "path": "../Sakiny.DTO/DoctorDiet.DTO.csproj",
+      "msbuildProject": "../Sakiny.DTO/DoctorDiet.DTO.csproj"
     },
-    "Sakiny.Models/1.0.0": {
+    "DoctorDiet.Models/1.0.0": {
       "type": "project",
-      "path": "../Sakiny.Models/Sakiny.Models.csproj",
-      "msbuildProject": "../Sakiny.Models/Sakiny.Models.csproj"
+      "path": "../Sakiny.Models/DoctorDiet.Models.csproj",
+      "msbuildProject": "../Sakiny.Models/DoctorDiet.Models.csproj"
     },
-    "Sakiny.Profiles/1.0.0": {
+    "DoctorDiet.Repository/1.0.0": {
       "type": "project",
-      "path": "../Sakiny.Profiles/Sakiny.Profiles.csproj",
-      "msbuildProject": "../Sakiny.Profiles/Sakiny.Profiles.csproj"
+      "path": "../Saking.Reposetory/DoctorDiet.Repository.csproj",
+      "msbuildProject": "../Saking.Reposetory/DoctorDiet.Repository.csproj"
     },
-    "Sakiny.Repository/1.0.0": {
+    "DoctorDiet.Services/1.0.0": {
       "type": "project",
-      "path": "../Saking.Reposetory/Sakiny.Repository.csproj",
-      "msbuildProject": "../Saking.Reposetory/Sakiny.Repository.csproj"
-    },
-    "Sakiny.Services/1.0.0": {
-      "type": "project",
-      "path": "../Sakiny.Services/Sakiny.Services.csproj",
-      "msbuildProject": "../Sakiny.Services/Sakiny.Services.csproj"
+      "path": "../Sakiny.Services/DoctorDiet.Services.csproj",
+      "msbuildProject": "../Sakiny.Services/DoctorDiet.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6523,37 +6503,36 @@
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
       "Autofac >= 7.0.1",
       "Autofac.Extensions.DependencyInjection >= 8.0.0",
+      "DoctorDiet.DTO >= 1.0.0",
+      "DoctorDiet.Data >= 1.0.0",
+      "DoctorDiet.Repository >= 1.0.0",
+      "DoctorDiet.Services >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.1",
       "Microsoft.EntityFrameworkCore >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.5",
-      "Sakiny.DTO >= 1.0.0",
-      "Sakiny.Data >= 1.0.0",
-      "Sakiny.Profiles >= 1.0.0",
-      "Sakiny.Repository >= 1.0.0",
-      "Sakiny.Services >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Al Lewaa Company\\.nuget\\packages\\": {},
+    "C:\\Users\\20106\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\pull_project\\Sakiny.API\\Sakiny.API.csproj",
-      "projectName": "Sakiny.API",
-      "projectPath": "D:\\pull_project\\Sakiny.API\\Sakiny.API.csproj",
-      "packagesPath": "C:\\Users\\Al Lewaa Company\\.nuget\\packages\\",
-      "outputPath": "D:\\pull_project\\Sakiny.API\\obj\\",
+      "projectUniqueName": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.API\\DoctorDiet.API.csproj",
+      "projectName": "DoctorDiet.API",
+      "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.API\\DoctorDiet.API.csproj",
+      "packagesPath": "C:\\Users\\20106\\.nuget\\packages\\",
+      "outputPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Al Lewaa Company\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\20106\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6568,20 +6547,17 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\pull_project\\Saking.Reposetory\\Sakiny.Repository.csproj": {
-              "projectPath": "D:\\pull_project\\Saking.Reposetory\\Sakiny.Repository.csproj"
+            "E:\\DoctorDiet_API\\Doctor Diet\\Saking.Reposetory\\DoctorDiet.Repository.csproj": {
+              "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Saking.Reposetory\\DoctorDiet.Repository.csproj"
             },
-            "D:\\pull_project\\Sakiny.Data\\Sakiny.Data.csproj": {
-              "projectPath": "D:\\pull_project\\Sakiny.Data\\Sakiny.Data.csproj"
+            "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Data\\DoctorDiet.Data.csproj": {
+              "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Data\\DoctorDiet.Data.csproj"
             },
-            "D:\\pull_project\\Sakiny.DTO\\Sakiny.DTO.csproj": {
-              "projectPath": "D:\\pull_project\\Sakiny.DTO\\Sakiny.DTO.csproj"
+            "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.DTO\\DoctorDiet.DTO.csproj": {
+              "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.DTO\\DoctorDiet.DTO.csproj"
             },
-            "D:\\pull_project\\Sakiny.Profiles\\Sakiny.Profiles.csproj": {
-              "projectPath": "D:\\pull_project\\Sakiny.Profiles\\Sakiny.Profiles.csproj"
-            },
-            "D:\\pull_project\\Sakiny.Services\\Sakiny.Services.csproj": {
-              "projectPath": "D:\\pull_project\\Sakiny.Services\\Sakiny.Services.csproj"
+            "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Services\\DoctorDiet.Services.csproj": {
+              "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Services\\DoctorDiet.Services.csproj"
             }
           }
         }
@@ -6660,7 +6636,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

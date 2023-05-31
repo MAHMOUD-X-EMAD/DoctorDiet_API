@@ -1,18 +1,18 @@
-﻿using Sakiny.DTO;
-using Sakiny.Models;
+﻿//using DoctorDiet.DTO;
+using DoctorDiet.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sakiny.Repository.Interfaces
+namespace DoctorDiet.Repository.Interfaces
 {
     public interface IAccountRepository
     {
-        void AddUser(User User);
-        void AddOwner(Owner Owner);
+        void AddPatient(Patient Patient);
+        
         void AddAdmin(Admin Admin);
-        void AddCooker(Cooker Cooker);
+  
     }
 }

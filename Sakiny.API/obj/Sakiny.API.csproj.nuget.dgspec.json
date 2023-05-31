@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\pull_project\\Sakiny.API\\Sakiny.API.csproj": {}
+    "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.API\\Sakiny.API.csproj": {}
   },
   "projects": {
-    "D:\\pull_project\\Saking.Reposetory\\Sakiny.Repository.csproj": {
+    "E:\\DoctorDiet_API\\Doctor Diet\\Saking.Reposetory\\Sakiny.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\pull_project\\Saking.Reposetory\\Sakiny.Repository.csproj",
+        "projectUniqueName": "E:\\DoctorDiet_API\\Doctor Diet\\Saking.Reposetory\\Sakiny.Repository.csproj",
         "projectName": "Sakiny.Repository",
-        "projectPath": "D:\\pull_project\\Saking.Reposetory\\Sakiny.Repository.csproj",
-        "packagesPath": "C:\\Users\\Al Lewaa Company\\.nuget\\packages\\",
-        "outputPath": "D:\\pull_project\\Saking.Reposetory\\obj\\",
+        "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Saking.Reposetory\\Sakiny.Repository.csproj",
+        "packagesPath": "C:\\Users\\20106\\.nuget\\packages\\",
+        "outputPath": "E:\\DoctorDiet_API\\Doctor Diet\\Saking.Reposetory\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Al Lewaa Company\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\20106\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,14 +32,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\pull_project\\Sakiny.Data\\Sakiny.Data.csproj": {
-                "projectPath": "D:\\pull_project\\Sakiny.Data\\Sakiny.Data.csproj"
+              "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Data\\Sakiny.Data.csproj": {
+                "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Data\\Sakiny.Data.csproj"
               },
-              "D:\\pull_project\\Sakiny.DTO\\Sakiny.DTO.csproj": {
-                "projectPath": "D:\\pull_project\\Sakiny.DTO\\Sakiny.DTO.csproj"
+              "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.DTO\\Sakiny.DTO.csproj": {
+                "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.DTO\\Sakiny.DTO.csproj"
               },
-              "D:\\pull_project\\Sakiny.Models\\Sakiny.Models.csproj": {
-                "projectPath": "D:\\pull_project\\Sakiny.Models\\Sakiny.Models.csproj"
+              "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Models\\Sakiny.Models.csproj": {
+                "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Models\\Sakiny.Models.csproj"
               }
             }
           }
@@ -79,24 +79,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\pull_project\\Sakiny.API\\Sakiny.API.csproj": {
+    "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.API\\Sakiny.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\pull_project\\Sakiny.API\\Sakiny.API.csproj",
+        "projectUniqueName": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.API\\Sakiny.API.csproj",
         "projectName": "Sakiny.API",
-        "projectPath": "D:\\pull_project\\Sakiny.API\\Sakiny.API.csproj",
-        "packagesPath": "C:\\Users\\Al Lewaa Company\\.nuget\\packages\\",
-        "outputPath": "D:\\pull_project\\Sakiny.API\\obj\\",
+        "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.API\\Sakiny.API.csproj",
+        "packagesPath": "C:\\Users\\20106\\.nuget\\packages\\",
+        "outputPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Al Lewaa Company\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\20106\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -111,20 +111,20 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\pull_project\\Saking.Reposetory\\Sakiny.Repository.csproj": {
-                "projectPath": "D:\\pull_project\\Saking.Reposetory\\Sakiny.Repository.csproj"
+              "E:\\DoctorDiet_API\\Doctor Diet\\Saking.Reposetory\\Sakiny.Repository.csproj": {
+                "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Saking.Reposetory\\Sakiny.Repository.csproj"
               },
-              "D:\\pull_project\\Sakiny.Data\\Sakiny.Data.csproj": {
-                "projectPath": "D:\\pull_project\\Sakiny.Data\\Sakiny.Data.csproj"
+              "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Data\\Sakiny.Data.csproj": {
+                "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Data\\Sakiny.Data.csproj"
               },
-              "D:\\pull_project\\Sakiny.DTO\\Sakiny.DTO.csproj": {
-                "projectPath": "D:\\pull_project\\Sakiny.DTO\\Sakiny.DTO.csproj"
+              "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.DTO\\Sakiny.DTO.csproj": {
+                "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.DTO\\Sakiny.DTO.csproj"
               },
-              "D:\\pull_project\\Sakiny.Profiles\\Sakiny.Profiles.csproj": {
-                "projectPath": "D:\\pull_project\\Sakiny.Profiles\\Sakiny.Profiles.csproj"
+              "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Profiles\\Sakiny.Profiles.csproj": {
+                "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Profiles\\Sakiny.Profiles.csproj"
               },
-              "D:\\pull_project\\Sakiny.Services\\Sakiny.Services.csproj": {
-                "projectPath": "D:\\pull_project\\Sakiny.Services\\Sakiny.Services.csproj"
+              "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Services\\Sakiny.Services.csproj": {
+                "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Services\\Sakiny.Services.csproj"
               }
             }
           }
@@ -203,24 +203,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\pull_project\\Sakiny.Data\\Sakiny.Data.csproj": {
+    "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Data\\Sakiny.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\pull_project\\Sakiny.Data\\Sakiny.Data.csproj",
+        "projectUniqueName": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Data\\Sakiny.Data.csproj",
         "projectName": "Sakiny.Data",
-        "projectPath": "D:\\pull_project\\Sakiny.Data\\Sakiny.Data.csproj",
-        "packagesPath": "C:\\Users\\Al Lewaa Company\\.nuget\\packages\\",
-        "outputPath": "D:\\pull_project\\Sakiny.Data\\obj\\",
+        "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Data\\Sakiny.Data.csproj",
+        "packagesPath": "C:\\Users\\20106\\.nuget\\packages\\",
+        "outputPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Al Lewaa Company\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\20106\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -235,8 +235,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\pull_project\\Sakiny.Models\\Sakiny.Models.csproj": {
-                "projectPath": "D:\\pull_project\\Sakiny.Models\\Sakiny.Models.csproj"
+              "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Models\\Sakiny.Models.csproj": {
+                "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Models\\Sakiny.Models.csproj"
               }
             }
           }
@@ -298,24 +298,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\pull_project\\Sakiny.DTO\\Sakiny.DTO.csproj": {
+    "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.DTO\\Sakiny.DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\pull_project\\Sakiny.DTO\\Sakiny.DTO.csproj",
+        "projectUniqueName": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.DTO\\Sakiny.DTO.csproj",
         "projectName": "Sakiny.DTO",
-        "projectPath": "D:\\pull_project\\Sakiny.DTO\\Sakiny.DTO.csproj",
-        "packagesPath": "C:\\Users\\Al Lewaa Company\\.nuget\\packages\\",
-        "outputPath": "D:\\pull_project\\Sakiny.DTO\\obj\\",
+        "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.DTO\\Sakiny.DTO.csproj",
+        "packagesPath": "C:\\Users\\20106\\.nuget\\packages\\",
+        "outputPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.DTO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Al Lewaa Company\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\20106\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -330,8 +330,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\pull_project\\Sakiny.Models\\Sakiny.Models.csproj": {
-                "projectPath": "D:\\pull_project\\Sakiny.Models\\Sakiny.Models.csproj"
+              "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Models\\Sakiny.Models.csproj": {
+                "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Models\\Sakiny.Models.csproj"
               }
             }
           }
@@ -361,24 +361,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\pull_project\\Sakiny.Models\\Sakiny.Models.csproj": {
+    "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Models\\Sakiny.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\pull_project\\Sakiny.Models\\Sakiny.Models.csproj",
+        "projectUniqueName": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Models\\Sakiny.Models.csproj",
         "projectName": "Sakiny.Models",
-        "projectPath": "D:\\pull_project\\Sakiny.Models\\Sakiny.Models.csproj",
-        "packagesPath": "C:\\Users\\Al Lewaa Company\\.nuget\\packages\\",
-        "outputPath": "D:\\pull_project\\Sakiny.Models\\obj\\",
+        "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Models\\Sakiny.Models.csproj",
+        "packagesPath": "C:\\Users\\20106\\.nuget\\packages\\",
+        "outputPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Al Lewaa Company\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\20106\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -452,24 +452,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\pull_project\\Sakiny.Profiles\\Sakiny.Profiles.csproj": {
+    "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Profiles\\Sakiny.Profiles.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\pull_project\\Sakiny.Profiles\\Sakiny.Profiles.csproj",
+        "projectUniqueName": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Profiles\\Sakiny.Profiles.csproj",
         "projectName": "Sakiny.Profiles",
-        "projectPath": "D:\\pull_project\\Sakiny.Profiles\\Sakiny.Profiles.csproj",
-        "packagesPath": "C:\\Users\\Al Lewaa Company\\.nuget\\packages\\",
-        "outputPath": "D:\\pull_project\\Sakiny.Profiles\\obj\\",
+        "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Profiles\\Sakiny.Profiles.csproj",
+        "packagesPath": "C:\\Users\\20106\\.nuget\\packages\\",
+        "outputPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Profiles\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Al Lewaa Company\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\20106\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -484,8 +484,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\pull_project\\Sakiny.DTO\\Sakiny.DTO.csproj": {
-                "projectPath": "D:\\pull_project\\Sakiny.DTO\\Sakiny.DTO.csproj"
+              "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.DTO\\Sakiny.DTO.csproj": {
+                "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.DTO\\Sakiny.DTO.csproj"
               }
             }
           }
@@ -525,24 +525,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\pull_project\\Sakiny.Services\\Sakiny.Services.csproj": {
+    "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Services\\Sakiny.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\pull_project\\Sakiny.Services\\Sakiny.Services.csproj",
+        "projectUniqueName": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Services\\Sakiny.Services.csproj",
         "projectName": "Sakiny.Services",
-        "projectPath": "D:\\pull_project\\Sakiny.Services\\Sakiny.Services.csproj",
-        "packagesPath": "C:\\Users\\Al Lewaa Company\\.nuget\\packages\\",
-        "outputPath": "D:\\pull_project\\Sakiny.Services\\obj\\",
+        "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Services\\Sakiny.Services.csproj",
+        "packagesPath": "C:\\Users\\20106\\.nuget\\packages\\",
+        "outputPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Al Lewaa Company\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\20106\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -557,11 +557,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\pull_project\\Saking.Reposetory\\Sakiny.Repository.csproj": {
-                "projectPath": "D:\\pull_project\\Saking.Reposetory\\Sakiny.Repository.csproj"
+              "E:\\DoctorDiet_API\\Doctor Diet\\Saking.Reposetory\\Sakiny.Repository.csproj": {
+                "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Saking.Reposetory\\Sakiny.Repository.csproj"
               },
-              "D:\\pull_project\\Sakiny.DTO\\Sakiny.DTO.csproj": {
-                "projectPath": "D:\\pull_project\\Sakiny.DTO\\Sakiny.DTO.csproj"
+              "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.DTO\\Sakiny.DTO.csproj": {
+                "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.DTO\\Sakiny.DTO.csproj"
               }
             }
           }
@@ -615,7 +615,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

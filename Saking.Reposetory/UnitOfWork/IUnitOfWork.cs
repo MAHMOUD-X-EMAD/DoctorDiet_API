@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sakiny.Repository.UnitOfWork
+namespace DoctorDiet.Repository.UnitOfWork
 {
     public interface IUnitOfWork
     {

@@ -6,14 +6,14 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using Sakiny.API.Config;
-using Sakiny.Data;
-using Sakiny.Models;
-using Sakiny.Profiles;
+using DoctorDiet.API.Config;
+using DoctorDiet.Data;
+using DoctorDiet.Models;
+//using DoctorDiet.Profiles;
 using System.Diagnostics;
 using System.Text;
 
-namespace Sakiny.API
+namespace DoctorDiet.API
 {
     public class Program
     {
@@ -35,14 +35,14 @@ namespace Sakiny.API
             builder.Host.ConfigureContainer<ContainerBuilder>(opt =>
                 opt.RegisterModule(new AutoFacModule()));
 
-            builder.Services.AddAutoMapper(typeof(RegisterAdminProfile).Assembly);
-            builder.Services.AddAutoMapper(typeof(RegisterUserProfile).Assembly);
-            builder.Services.AddAutoMapper(typeof(RegisterOwnerProfile).Assembly);
-            builder.Services.AddAutoMapper(typeof(RegisterCookerProfile).Assembly);
-            builder.Services.AddAutoMapper(typeof(ReportCreateProfile).Assembly);
+      //      builder.Services.AddAutoMapper(typeof(RegisterAdminProfile).Assembly);
+      //      builder.Services.AddAutoMapper(typeof(RegisterUserProfile).Assembly);
+      //      builder.Services.AddAutoMapper(typeof(RegisterOwnerProfile).Assembly);
+      //      builder.Services.AddAutoMapper(typeof(RegisterCookerProfile).Assembly);
+      //      builder.Services.AddAutoMapper(typeof(ReportCreateProfile).Assembly);
 
-            builder.Services.AddAutoMapper(typeof(ApartmentProfile).Assembly);
-      builder.Services.AddAutoMapper(typeof(ApartmentImageProfile).Assembly);
+      //      builder.Services.AddAutoMapper(typeof(ApartmentProfile).Assembly);
+      //builder.Services.AddAutoMapper(typeof(ApartmentImageProfile).Assembly);
 
 
 

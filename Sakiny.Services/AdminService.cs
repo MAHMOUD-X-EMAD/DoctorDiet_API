@@ -1,13 +1,13 @@
-﻿using Sakiny.Repository.Interfaces;
-using Sakiny.Models;
+﻿using DoctorDiet.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using DoctorDiet.Models;
 
-namespace Sakiny.Services
+namespace DoctorDiet.Services
 {
     public class AdminService
     {

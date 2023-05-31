@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Sakiny.Services;
+using DoctorDiet.Services;
 
-namespace Sakiny.API.Controllers
+namespace DoctorDiet.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -15,13 +15,13 @@ namespace Sakiny.API.Controllers
             }
 
 
-            [HttpGet("userid")]
-            public IActionResult GetuserById (string userid)
-            {
-                var user = userService.GetUserData(userid);
+            //[HttpGet("userid")]
+            //public IActionResult GetuserById (string userid)
+            //{
+            //    var user = userService.GetUserData(userid);
 
-                return Ok(user);
+            //    return Ok(user);
 
-            }
+            //}
         }
 }

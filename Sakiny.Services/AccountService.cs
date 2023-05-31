@@ -1,13 +1,13 @@
-﻿using Sakiny.Repository.Interfaces;
-using Sakiny.Repository.UnitOfWork;
-using Sakiny.Models;
+﻿using DoctorDiet.Repository.Interfaces;
+using DoctorDiet.Repository.UnitOfWork;
+using DoctorDiet.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sakiny.Services
+namespace DoctorDiet.Services
 {
     public class AccountService
     {
@@ -20,25 +20,17 @@ namespace Sakiny.Services
             _accountRepository = accountRepository;
         }
 
-        public void AddUser(User User)
+        public void AddUser(Patient Patient)
         {
-            _accountRepository.AddUser(User);
+            _accountRepository.AddPatient(Patient);
             _UnitOfWork.SaveChanges();
         }
-        public void AddOwner(Owner Owner)
-        {
-            _accountRepository.AddOwner(Owner);
-            _UnitOfWork.SaveChanges();
-        }
+        
         public void AddAdmin(Admin Admin)
         {
             _accountRepository.AddAdmin(Admin);
             _UnitOfWork.SaveChanges();
         }
-        public void AddCooker(Cooker Cooker)
-        {
-            _accountRepository.AddCooker(Cooker);
-            _UnitOfWork.SaveChanges();
-        }
+        
     }
 }

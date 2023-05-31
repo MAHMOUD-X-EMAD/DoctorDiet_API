@@ -1,0 +1,17 @@
+E:\DoctorDiet_API\Doctor Diet\Sakiny.Data\obj\Debug\net7.0\DoctorDiet.Data.csproj.AssemblyReference.cache
+E:\DoctorDiet_API\Doctor Diet\Sakiny.Data\obj\Debug\net7.0\DoctorDiet.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\DoctorDiet_API\Doctor Diet\Sakiny.Data\obj\Debug\net7.0\DoctorDiet.Data.AssemblyInfoInputs.cache
+E:\DoctorDiet_API\Doctor Diet\Sakiny.Data\obj\Debug\net7.0\DoctorDiet.Data.AssemblyInfo.cs
+E:\DoctorDiet_API\Doctor Diet\Sakiny.Data\obj\Debug\net7.0\DoctorDiet.Data.csproj.CoreCompileInputs.cache
+E:\DoctorDiet_API\Doctor Diet\Sakiny.Data\bin\Debug\net7.0\DoctorDiet.Data.deps.json
+E:\DoctorDiet_API\Doctor Diet\Sakiny.Data\bin\Debug\net7.0\DoctorDiet.Data.runtimeconfig.json
+E:\DoctorDiet_API\Doctor Diet\Sakiny.Data\bin\Debug\net7.0\DoctorDiet.Data.dll
+E:\DoctorDiet_API\Doctor Diet\Sakiny.Data\bin\Debug\net7.0\DoctorDiet.Data.pdb
+E:\DoctorDiet_API\Doctor Diet\Sakiny.Data\bin\Debug\net7.0\DoctorDiet.Models.dll
+E:\DoctorDiet_API\Doctor Diet\Sakiny.Data\bin\Debug\net7.0\DoctorDiet.Models.pdb
+E:\DoctorDiet_API\Doctor Diet\Sakiny.Data\obj\Debug\net7.0\DoctorDiet.Data.csproj.CopyComplete
+E:\DoctorDiet_API\Doctor Diet\Sakiny.Data\obj\Debug\net7.0\DoctorDiet.Data.dll
+E:\DoctorDiet_API\Doctor Diet\Sakiny.Data\obj\Debug\net7.0\refint\DoctorDiet.Data.dll
+E:\DoctorDiet_API\Doctor Diet\Sakiny.Data\obj\Debug\net7.0\DoctorDiet.Data.pdb
+E:\DoctorDiet_API\Doctor Diet\Sakiny.Data\obj\Debug\net7.0\DoctorDiet.Data.genruntimeconfig.cache
+E:\DoctorDiet_API\Doctor Diet\Sakiny.Data\obj\Debug\net7.0\ref\DoctorDiet.Data.dll

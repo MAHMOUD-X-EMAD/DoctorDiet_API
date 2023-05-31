@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Sakiny.Models;
-using Sakiny.Services;
+//using DoctorDiet.Models;
+using DoctorDiet.Services;
 
-namespace Sakiny.API.Controllers
+namespace DoctorDiet.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -16,38 +16,38 @@ namespace Sakiny.API.Controllers
             _CommentService = CommentService;
         }
 
-        [HttpPost]
-        public IActionResult AddComment(Comment Comment)
-        {
-            _CommentService.Add(Comment);
+        //[HttpPost]
+        //public IActionResult AddComment(Comment Comment)
+        //{
+        //    _CommentService.Add(Comment);
 
-            _CommentService.SaveChanges();
+        //    _CommentService.SaveChanges();
 
-            return Ok("Done");
-        }
+        //    return Ok("Done");
+        //}
 
-        [HttpGet("Apartmentid")]
-        public IActionResult GetByApartmentID(int Apartmentid)
-        {
-            var comments = _CommentService.GetByApartmentID(Apartmentid);
+        //[HttpGet("Apartmentid")]
+        //public IActionResult GetByApartmentID(int Apartmentid)
+        //{
+        //    var comments = _CommentService.GetByApartmentID(Apartmentid);
 
-            return Ok(comments);
-        }
+        //    return Ok(comments);
+        //}
 
-        [HttpGet("id")]
-        public IActionResult GetByCommentID(int id)
-        {
-            var comment = _CommentService.GetByCommentID(id);
+       // [HttpGet("id")]
+        //public IActionResult GetByCommentID(int id)
+        //{
+        //    var comment = _CommentService.GetByCommentID(id);
 
-            return Ok(comment);
-        }
+        //    return Ok(comment);
+        //}
 
-        [HttpDelete("id")]
-        public IActionResult DeleteComment(int id)
-        {
-            _CommentService.Delete(id);
+        //[HttpDelete("id")]
+        //public IActionResult DeleteComment(int id)
+        //{
+        //    _CommentService.Delete(id);
 
-            return Ok("Done");
-        }
+        //    return Ok("Done");
+        //}
     }
 }

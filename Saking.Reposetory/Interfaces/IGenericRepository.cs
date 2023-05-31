@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sakiny.Repository.Interfaces
+namespace DoctorDiet.Repository.Interfaces
 {
     public interface IGenericRepository<T,Y>
     {

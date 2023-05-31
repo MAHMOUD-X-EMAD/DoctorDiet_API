@@ -1,12 +1,12 @@
 ﻿using Autofac;
-using Sakiny.Repository.Interfaces;
-using Sakiny.Repository.Reposetories;
-using Sakiny.Repository.UnitOfWork;
-using Sakiny.Data;
-using Sakiny.Services;
-using Sakiny.Models;
+using DoctorDiet.Repository.Interfaces;
+using DoctorDiet.Repository.Reposetories;
+using DoctorDiet.Repository.UnitOfWork;
+using DoctorDiet.Data;
+using DoctorDiet.Services;
+using DoctorDiet.Models;
 
-namespace Sakiny.API.Config
+namespace DoctorDiet.API.Config
 {
     public class AutoFacModule: Module
     {
@@ -23,7 +23,7 @@ namespace Sakiny.API.Config
             builder.RegisterAssemblyTypes(typeof(UserService).Assembly).InstancePerLifetimeScope();
             builder.RegisterAssemblyTypes(typeof(ReportService).Assembly).InstancePerLifetimeScope();
             builder.RegisterAssemblyTypes(typeof(CommentService).Assembly).InstancePerLifetimeScope();
-            builder.RegisterAssemblyTypes(typeof(ApartmentImageService).Assembly).InstancePerLifetimeScope();
+           // builder.RegisterAssemblyTypes(typeof(ApartmentImageService).Assembly).InstancePerLifetimeScope();
             builder.RegisterAssemblyTypes(typeof(ApartmentService).Assembly).InstancePerLifetimeScope();
 
         }
