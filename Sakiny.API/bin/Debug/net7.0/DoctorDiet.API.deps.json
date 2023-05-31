@@ -1167,18 +1167,6 @@
           "DoctorDiet.Models.dll": {}
         }
       },
-      "DoctorDiet.Repository/1.0.0": {
-        "dependencies": {
-          "AutoMapper": "12.0.1",
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
-          "DoctorDiet.DTO": "1.0.0",
-          "DoctorDiet.Data": "1.0.0",
-          "DoctorDiet.Models": "1.0.0"
-        },
-        "runtime": {
-          "DoctorDiet.Repository.dll": {}
-        }
-      },
       "DoctorDiet.Services/1.0.0": {
         "dependencies": {
           "AutoMapper": "12.0.1",
@@ -2072,11 +2060,6 @@
       "sha512": ""
     },
     "DoctorDiet.Models/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "DoctorDiet.Repository/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

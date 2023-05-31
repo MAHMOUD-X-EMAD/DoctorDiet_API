@@ -16,6 +16,7 @@ namespace Sakiny.Models
         public string PatientId { get; set; }
         public int CaloriesFrom { get; set; }
         public int CaloriesTo { get; set; }
+        public int Duration { get; set; }
         public virtual List<Day> Days { get; set; }
         public virtual Patient Patient { get; set; }
         public virtual List<PlanMealBridge> PlanMealBridges { get; set; }
