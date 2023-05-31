@@ -14,6 +14,8 @@ namespace Sakiny.Models
         public int Id { get; set; }
         [ForeignKey("Patient")]
         public string PatientId { get; set; }
+        public DateTime DateFrom { get; set; }
+        public DateTime DateTo { get; set; }
         public int CaloriesFrom { get; set; }
         public int CaloriesTo { get; set; }
         public int Duration { get; set; }
