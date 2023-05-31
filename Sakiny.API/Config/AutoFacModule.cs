@@ -1,12 +1,12 @@
 ﻿using Autofac;
-using DoctorDiet.Repository.Interfaces;
-using DoctorDiet.Repository.Reposetories;
-using DoctorDiet.Repository.UnitOfWork;
-using DoctorDiet.Data;
-using DoctorDiet.Services;
-using DoctorDiet.Models;
+using Sakiny.Repository.Interfaces;
+using Sakiny.Repository.Reposetories;
+using Sakiny.Repository.UnitOfWork;
+using Sakiny.Data;
+using Sakiny.Services;
+using Sakiny.Models;
 
-namespace DoctorDiet.API.Config
+namespace Sakiny.API.Config
 {
     public class AutoFacModule: Module
     {

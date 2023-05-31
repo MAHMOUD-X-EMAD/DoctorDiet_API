@@ -1,9 +1,9 @@
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
 //using DoctorDiet.DTO;
-using DoctorDiet.Models;
-using DoctorDiet.Repository.Interfaces;
-using DoctorDiet.Repository.UnitOfWork;
+using Sakiny.Models;
+using Sakiny.Repository.Interfaces;
+using Sakiny.Repository.UnitOfWork;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +11,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DoctorDiet.Services
+namespace Sakiny.Services
 {
     public class ApartmentService
     {

@@ -6,9 +6,9 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DoctorDiet.Models.Interface;
+using Sakiny.Models.Interface;
 
-namespace DoctorDiet.Models
+namespace Sakiny.Models
 {
     public class Admin:IBaseModel<string>
     {

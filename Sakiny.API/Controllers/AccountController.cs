@@ -2,15 +2,15 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 //using DoctorDiet.DTO;
-using DoctorDiet.Models;
+using Sakiny.Models;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using AutoMapper;
-using DoctorDiet.Services;
-using DoctorDiet.Repository.UnitOfWork;
-using DoctorDiet.Models;
+using Sakiny.Services;
+using Sakiny.Repository.UnitOfWork;
+using Sakiny.Models;
 
 namespace WebApplication1.Controllers
 {

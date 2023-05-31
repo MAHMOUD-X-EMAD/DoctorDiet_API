@@ -104,3 +104,4 @@ E:\DoctorDiet_API\Doctor Diet\Sakiny.API\obj\Debug\net7.0\refint\DoctorDiet.API.
 E:\DoctorDiet_API\Doctor Diet\Sakiny.API\obj\Debug\net7.0\DoctorDiet.API.pdb
 E:\DoctorDiet_API\Doctor Diet\Sakiny.API\obj\Debug\net7.0\DoctorDiet.API.genruntimeconfig.cache
 E:\DoctorDiet_API\Doctor Diet\Sakiny.API\obj\Debug\net7.0\ref\DoctorDiet.API.dll
+E:\DoctorDiet_API\Doctor Diet\Sakiny.API\obj\Debug\net7.0\DoctorDiet.API.MvcApplicationPartsAssemblyInfo.cs

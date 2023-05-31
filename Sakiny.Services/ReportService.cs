@@ -1,17 +1,17 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
-using DoctorDiet.Repository.Interfaces;
-using DoctorDiet.Repository.UnitOfWork;
+using Sakiny.Repository.Interfaces;
+using Sakiny.Repository.UnitOfWork;
 //using DoctorDiet.DTO;
-using DoctorDiet.Models;
+using Sakiny.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DoctorDiet.Services
+namespace Sakiny.Services
 {
     public class ReportService
     {

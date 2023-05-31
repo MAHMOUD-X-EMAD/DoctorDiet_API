@@ -1,11 +1,11 @@
-﻿using DoctorDiet.Data;
+﻿using Sakiny.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DoctorDiet.Repository.UnitOfWork
+namespace Sakiny.Repository.UnitOfWork
 {
     public class UnitOfWork:IUnitOfWork
     {

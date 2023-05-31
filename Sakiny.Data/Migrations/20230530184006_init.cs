@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace DoctorDiet.Data.Migrations
+namespace Sakiny.Data.Migrations
 {
     /// <inheritdoc />
     public partial class init : Migration

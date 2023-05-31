@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Query;
 using Microsoft.EntityFrameworkCore;
-using DoctorDiet.Models;
+using Sakiny.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace DoctorDiet.Data.Extentions
+namespace Sakiny.Data.Extentions
 {
     static class DbContextExtensions
     {

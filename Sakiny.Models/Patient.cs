@@ -1,10 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
-using DoctorDiet.Models.Interface;
+using Sakiny.Models.Interface;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
-namespace DoctorDiet.Models
+namespace Sakiny.Models
 {
     public class Patient : IBaseModel<string>
     {

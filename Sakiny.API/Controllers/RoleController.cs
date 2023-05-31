@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DoctorDiet.API.Controllers
+namespace Sakiny.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

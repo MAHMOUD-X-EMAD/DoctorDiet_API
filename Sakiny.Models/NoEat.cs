@@ -1,7 +1,7 @@
-﻿using DoctorDiet.Models.Interface;
+﻿using Sakiny.Models.Interface;
 using System.ComponentModel;
 
-namespace DoctorDiet.Models
+namespace Sakiny.Models
 {
     public class NoEat:IBaseModel<int>
     {

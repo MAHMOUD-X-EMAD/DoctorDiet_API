@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DoctorDiet.Models.Interface
+namespace Sakiny.Models.Interface
 {
     public interface IBaseModel<T>
     {

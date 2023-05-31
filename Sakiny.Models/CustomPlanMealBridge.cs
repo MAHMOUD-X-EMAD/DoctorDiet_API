@@ -1,4 +1,4 @@
-﻿using DoctorDiet.Models.Interface;
+﻿using Sakiny.Models.Interface;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DoctorDiet.Models
+namespace Sakiny.Models
 {
     public class CustomPlanMealBridge:IBaseModel<int>
     {

@@ -1,8 +1,8 @@
-﻿using DoctorDiet.Models.Interface;
+﻿using Sakiny.Models.Interface;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace DoctorDiet.Models
+namespace Sakiny.Models
 {
     public class Notes : IBaseModel<int>
     {

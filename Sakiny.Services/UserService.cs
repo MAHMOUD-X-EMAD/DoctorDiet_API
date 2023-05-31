@@ -1,5 +1,5 @@
-﻿using DoctorDiet.Repository.Interfaces;
-using DoctorDiet.Models;
+﻿using Sakiny.Repository.Interfaces;
+using Sakiny.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace DoctorDiet.Services
+namespace Sakiny.Services
 {
     public class UserService { 
     //{

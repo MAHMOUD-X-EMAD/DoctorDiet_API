@@ -1,13 +1,13 @@
-﻿using DoctorDiet.Repository.Interfaces;
-using DoctorDiet.Repository.UnitOfWork;
-using DoctorDiet.Models;
+﻿using Sakiny.Repository.Interfaces;
+using Sakiny.Repository.UnitOfWork;
+using Sakiny.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DoctorDiet.Services
+namespace Sakiny.Services
 {
     public class AccountService
     {

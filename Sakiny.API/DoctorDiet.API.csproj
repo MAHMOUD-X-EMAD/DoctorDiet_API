@@ -29,6 +29,7 @@
     <ProjectReference Include="..\Saking.Reposetory\DoctorDiet.Repository.csproj" />
     <ProjectReference Include="..\Sakiny.Data\DoctorDiet.Data.csproj" />
     <ProjectReference Include="..\Sakiny.DTO\DoctorDiet.DTO.csproj" />
+    <ProjectReference Include="..\Sakiny.Reposetory\DoctorDiet.Repository.csproj" />
     <ProjectReference Include="..\Sakiny.Services\DoctorDiet.Services.csproj" />
   </ItemGroup>
 

@@ -1,9 +1,9 @@
-﻿using DoctorDiet.Models;
-using DoctorDiet.Models.Interface;
+﻿using Sakiny.Models;
+using Sakiny.Models.Interface;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 using Microsoft.EntityFrameworkCore;
-using DoctorDiet.Data.Extentions;
+using Sakiny.Data.Extentions;
 
 using System;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DoctorDiet.Data
+namespace Sakiny.Data
 {
     public class Context : IdentityDbContext<ApplicationUser>
     {

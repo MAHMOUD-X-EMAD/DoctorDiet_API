@@ -6,14 +6,14 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using DoctorDiet.API.Config;
-using DoctorDiet.Data;
-using DoctorDiet.Models;
+using Sakiny.API.Config;
+using Sakiny.Data;
+using Sakiny.Models;
 //using DoctorDiet.Profiles;
 using System.Diagnostics;
 using System.Text;
 
-namespace DoctorDiet.API
+namespace Sakiny.API
 {
     public class Program
     {

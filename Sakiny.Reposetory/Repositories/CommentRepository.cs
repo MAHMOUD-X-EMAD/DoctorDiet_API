@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
-using DoctorDiet.Data;
-using DoctorDiet.Models;
-using DoctorDiet.Repository.Interfaces;
+using Sakiny.Data;
+using Sakiny.Models;
+using Sakiny.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ using System.Linq.Dynamic.Core;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DoctorDiet.Repository.Reposetories
+namespace Sakiny.Repository.Reposetories
 {
     public class CommentRepository : ICommentRepository 
     {
