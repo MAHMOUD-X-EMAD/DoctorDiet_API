@@ -31,6 +31,11 @@ namespace Sakiny.Services
             _accountRepository.AddAdmin(Admin);
             _UnitOfWork.SaveChanges();
         }
+        public void AddDoctor(Doctor Doctor)
+        {
+          _accountRepository.AddDoctor(Doctor);
+            _UnitOfWork.SaveChanges();
+        }
         
     }
 }

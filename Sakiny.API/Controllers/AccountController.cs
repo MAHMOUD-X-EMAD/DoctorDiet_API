@@ -11,6 +11,7 @@ using AutoMapper;
 using Sakiny.Services;
 using Sakiny.Repository.UnitOfWork;
 using Sakiny.Models;
+using Sakiny.DTO;
 
 namespace WebApplication1.Controllers
 {
@@ -32,27 +33,28 @@ namespace WebApplication1.Controllers
             _unitOfWork = unitOfWork;
         }
 
-        /*[HttpPost("UserRegister")]
-        public async Task<IActionResult> UserRegister(RegisterUserDto registerUserDto)
+        [HttpPost("UserRegister")]
+        public async Task<IActionResult> PatientRegister(RegisterPatientDto registerPatientDto)
         {
             if (ModelState.IsValid)
             {
-                ApplicationUser ApplicationUser = _mapper.Map<ApplicationUser>(registerUserDto);
+                ApplicationUser ApplicationUser = _mapper.Map<ApplicationUser>(registerPatientDto);
 
-                IdentityResult result = await userManager.CreateAsync(ApplicationUser, registerUserDto.Password);
+                IdentityResult result = await userManager.CreateAsync(ApplicationUser, registerPatientDto.Password);
                 RegisterDto registerDto = new RegisterDto();
 
                 if (result.Succeeded)
                 {
                     await userManager.AddToRoleAsync(ApplicationUser, "User");
-                    User user = new User();
-                    user.Id = ApplicationUser.Id;
-                    user.NationalNumber = registerUserDto.NationalNumber;
+                    Patient patient = new Patient();
+
+                    patient.Id = ApplicationUser.Id;
+                    user.NationalNumber = registerPatientDto.NationalNumber;
 
                     _accountService.AddUser(user);
                     _unitOfWork.CommitChanges();
 
-                    registerDto.Message = "Success";    
+                    registerDto.Message = "Success";
                     return Ok(registerDto);
                 }
                 else
@@ -65,25 +67,25 @@ namespace WebApplication1.Controllers
             }
         }
 
-        [HttpPost("OwnerRegister")]
-        public async Task<IActionResult> OwnerRegister(RegisterOwnerDto registerOwnerDto)
+        [HttpPost("DoctorRegister")]
+        public async Task<IActionResult> OwnerRegister(RegisterDoctorDto registerDoctorDto)
         {
             if (ModelState.IsValid)
             {
-                ApplicationUser ApplicationUser = _mapper.Map<ApplicationUser>(registerOwnerDto);
+                ApplicationUser ApplicationUser = _mapper.Map<ApplicationUser>(registerDoctorDto);
 
-                IdentityResult result = await userManager.CreateAsync(ApplicationUser, registerOwnerDto.Password);
+                IdentityResult result = await userManager.CreateAsync(ApplicationUser, registerDoctorDto.Password);
                 RegisterDto registerDto = new RegisterDto();
 
                 if (result.Succeeded)
                 {
                     await userManager.AddToRoleAsync(ApplicationUser, "Owner");
-                    Owner owner = new Owner();
-                    owner.Id = ApplicationUser.Id;
-                    owner.IdentityImage = registerOwnerDto.IdntityImage;
+                    Doctor doctor = new Doctor();
+                    doctor.Id = ApplicationUser.Id;
+                    doctor.Specialization = registerDoctorDto.Specialization;
 
-           
-                    _accountService.AddOwner(owner);
+
+                    _accountService.AddDoctor(doctor);
                     _unitOfWork.CommitChanges();
 
                     registerDto.Message = "Success";
@@ -99,39 +101,7 @@ namespace WebApplication1.Controllers
             }
         }
 
-        [HttpPost("CookerRegister")]
-        public async Task<IActionResult> CookerRegister(RegisterCookerDto registerCookerDto)
-        {
-            if (ModelState.IsValid)
-            {
-                ApplicationUser ApplicationUser = _mapper.Map<ApplicationUser>(registerCookerDto);
 
-                IdentityResult result = await userManager.CreateAsync(ApplicationUser, registerCookerDto.Password);
-                RegisterDto registerDto = new RegisterDto();
-
-                if (result.Succeeded)
-                {
-                    await userManager.AddToRoleAsync(ApplicationUser, "Cooker");
-                    Cooker cooker = new Cooker();
-                    cooker.ApplicationUserId = ApplicationUser.Id;
-                    cooker.Availability = registerCookerDto.Availablility;
-
-
-                    _accountService.AddCooker(cooker);
-                    _unitOfWork.CommitChanges();
-
-                    registerDto.Message = "Success";
-                    return Ok(registerDto);
-                }
-                else
-                    registerDto.Message = "Failed";
-                return BadRequest(registerDto);
-            }
-            else
-            {
-                return BadRequest(ModelState);
-            }
-        }
 
         [HttpPost("AdminRegister")]
         public async Task<IActionResult> AdminRegister(RegisterAdminDto registerAdminDto)
@@ -217,7 +187,7 @@ namespace WebApplication1.Controllers
             {
                 return BadRequest(ModelState);
             }
-        }*/
+        }
     }
 
 }

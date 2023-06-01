@@ -22,6 +22,10 @@ namespace Sakiny.Models
         public virtual List<Day> Days { get; set; }
         public virtual Patient Patient { get; set; }
         public virtual List<PlanMealBridge> PlanMealBridges { get; set; }
+        [ForeignKey("NoEat")]
+        public int NoeatId { get; set; }
+        public virtual NoEat NoEat { get; set; }
+  
 
         [DefaultValue("false")]
         public bool IsDeleted { get; set; }

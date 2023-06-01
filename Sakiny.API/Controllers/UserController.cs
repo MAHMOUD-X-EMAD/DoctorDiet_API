@@ -7,9 +7,9 @@ namespace Sakiny.API.Controllers
     [ApiController]
     public class UserController : Controller
         {
-            UserService userService;
+            PatientService userService;
 
-            public UserController(UserService userService)
+            public UserController(PatientService userService)
             {
                 this.userService = userService;
             }

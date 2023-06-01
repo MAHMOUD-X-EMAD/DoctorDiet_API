@@ -19,6 +19,7 @@ namespace Sakiny.Models
         public double Weight { get; set; }
         public double Height { get; set; }
         public string Subscribed { get; set; }
+        public string Goal { get; set; }
         public DateTime BirthDate { get; set; }
         public string Diseases { get; set; }
         public int Calories { get; set; }

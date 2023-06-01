@@ -12,7 +12,7 @@ namespace Sakiny.Services
     public class AdminService
     {
 
-        IGenericRepository<Admin,string> _repositry;
+       IGenericRepository<Admin,string> _repositry;
 
       public AdminService(IGenericRepository<Admin,string> Repositry)
         {

@@ -26,7 +26,9 @@ namespace Sakiny.Models
 
       public virtual List<Patient> Patients { get; set; }
 
-        
+        public string Specialization { get; set; }
+        public string Location { get; set; }
+
 
     }
 }

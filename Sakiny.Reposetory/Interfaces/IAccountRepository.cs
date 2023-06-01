@@ -13,6 +13,8 @@ namespace Sakiny.Repository.Interfaces
         void AddPatient(Patient Patient);
         
         void AddAdmin(Admin Admin);
+
+        void AddDoctor(Doctor Doctor);
   
     }
 }

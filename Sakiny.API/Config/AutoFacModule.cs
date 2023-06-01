@@ -20,7 +20,7 @@ namespace Sakiny.API.Config
             builder.RegisterAssemblyTypes(typeof(AccountService).Assembly).InstancePerLifetimeScope();
             builder.RegisterAssemblyTypes(typeof(AdminService).Assembly).InstancePerLifetimeScope();
             builder.RegisterAssemblyTypes(typeof(OwnerService).Assembly).InstancePerLifetimeScope();
-            builder.RegisterAssemblyTypes(typeof(UserService).Assembly).InstancePerLifetimeScope();
+            builder.RegisterAssemblyTypes(typeof(PatientService).Assembly).InstancePerLifetimeScope();
             builder.RegisterAssemblyTypes(typeof(ReportService).Assembly).InstancePerLifetimeScope();
             builder.RegisterAssemblyTypes(typeof(CommentService).Assembly).InstancePerLifetimeScope();
            // builder.RegisterAssemblyTypes(typeof(ApartmentImageService).Assembly).InstancePerLifetimeScope();

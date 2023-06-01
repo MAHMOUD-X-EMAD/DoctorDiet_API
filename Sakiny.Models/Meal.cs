@@ -9,7 +9,6 @@ namespace Sakiny.Models
 
         public int Id { get; set; }
         [ForeignKey("Plan")]
-        public int PlanId { get; set; }
         public string Description { get; set; }
         public Category Category { get; set; }
         public CustomPlan Plan { get; set; }
