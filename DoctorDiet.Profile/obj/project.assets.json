@@ -5736,23 +5736,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Electronica Care\\.nuget\\packages\\": {},
+    "C:\\Users\\20106\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ITI-Tasks\\DoctorDiet\\DoctorDiet.Profile\\DoctorDiet.Profiles.csproj",
+      "projectUniqueName": "E:\\DoctorDiet_API\\Doctor Diet\\DoctorDiet.Profile\\DoctorDiet.Profiles.csproj",
       "projectName": "DoctorDiet.Profiles",
-      "projectPath": "D:\\ITI-Tasks\\DoctorDiet\\DoctorDiet.Profile\\DoctorDiet.Profiles.csproj",
-      "packagesPath": "C:\\Users\\Electronica Care\\.nuget\\packages\\",
-      "outputPath": "D:\\ITI-Tasks\\DoctorDiet\\DoctorDiet.Profile\\obj\\",
+      "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\DoctorDiet.Profile\\DoctorDiet.Profiles.csproj",
+      "packagesPath": "C:\\Users\\20106\\.nuget\\packages\\",
+      "outputPath": "E:\\DoctorDiet_API\\Doctor Diet\\DoctorDiet.Profile\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Electronica Care\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\20106\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5767,8 +5767,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\ITI-Tasks\\DoctorDiet\\Sakiny.DTO\\DoctorDiet.DTO.csproj": {
-              "projectPath": "D:\\ITI-Tasks\\DoctorDiet\\Sakiny.DTO\\DoctorDiet.DTO.csproj"
+            "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.DTO\\DoctorDiet.DTO.csproj": {
+              "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.DTO\\DoctorDiet.DTO.csproj"
             }
           }
         }

@@ -15,3 +15,20 @@ D:\ITI-Tasks\DoctorDiet\DoctorDiet.Profile\obj\Debug\net7.0\DoctorDiet.Profiles.
 D:\ITI-Tasks\DoctorDiet\DoctorDiet.Profile\obj\Debug\net7.0\refint\DoctorDiet.Profiles.dll
 D:\ITI-Tasks\DoctorDiet\DoctorDiet.Profile\obj\Debug\net7.0\DoctorDiet.Profiles.pdb
 D:\ITI-Tasks\DoctorDiet\DoctorDiet.Profile\obj\Debug\net7.0\ref\DoctorDiet.Profiles.dll
+E:\DoctorDiet_API\Doctor Diet\DoctorDiet.Profile\bin\Debug\net7.0\DoctorDiet.Profiles.deps.json
+E:\DoctorDiet_API\Doctor Diet\DoctorDiet.Profile\bin\Debug\net7.0\DoctorDiet.Profiles.dll
+E:\DoctorDiet_API\Doctor Diet\DoctorDiet.Profile\bin\Debug\net7.0\DoctorDiet.Profiles.pdb
+E:\DoctorDiet_API\Doctor Diet\DoctorDiet.Profile\bin\Debug\net7.0\DoctorDiet.DTO.dll
+E:\DoctorDiet_API\Doctor Diet\DoctorDiet.Profile\bin\Debug\net7.0\DoctorDiet.Models.dll
+E:\DoctorDiet_API\Doctor Diet\DoctorDiet.Profile\bin\Debug\net7.0\DoctorDiet.DTO.pdb
+E:\DoctorDiet_API\Doctor Diet\DoctorDiet.Profile\bin\Debug\net7.0\DoctorDiet.Models.pdb
+E:\DoctorDiet_API\Doctor Diet\DoctorDiet.Profile\obj\Debug\net7.0\DoctorDiet.Profiles.csproj.AssemblyReference.cache
+E:\DoctorDiet_API\Doctor Diet\DoctorDiet.Profile\obj\Debug\net7.0\DoctorDiet.Profiles.GeneratedMSBuildEditorConfig.editorconfig
+E:\DoctorDiet_API\Doctor Diet\DoctorDiet.Profile\obj\Debug\net7.0\DoctorDiet.Profiles.AssemblyInfoInputs.cache
+E:\DoctorDiet_API\Doctor Diet\DoctorDiet.Profile\obj\Debug\net7.0\DoctorDiet.Profiles.AssemblyInfo.cs
+E:\DoctorDiet_API\Doctor Diet\DoctorDiet.Profile\obj\Debug\net7.0\DoctorDiet.Profiles.csproj.CoreCompileInputs.cache
+E:\DoctorDiet_API\Doctor Diet\DoctorDiet.Profile\obj\Debug\net7.0\DoctorDiet.Profiles.csproj.CopyComplete
+E:\DoctorDiet_API\Doctor Diet\DoctorDiet.Profile\obj\Debug\net7.0\DoctorDiet.Profiles.dll
+E:\DoctorDiet_API\Doctor Diet\DoctorDiet.Profile\obj\Debug\net7.0\refint\DoctorDiet.Profiles.dll
+E:\DoctorDiet_API\Doctor Diet\DoctorDiet.Profile\obj\Debug\net7.0\DoctorDiet.Profiles.pdb
+E:\DoctorDiet_API\Doctor Diet\DoctorDiet.Profile\obj\Debug\net7.0\ref\DoctorDiet.Profiles.dll
