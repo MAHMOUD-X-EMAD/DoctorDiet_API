@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace DoctorDiet.Repository.Interfaces
 {
-    public interface IPlanRepository : IGenericRepository<Plan,int>
+    public interface ICustomPlanRepository:IGenericRepository<CustomPlan, int>
     {
+        List<Day> GetDayList(int id);
     }
 }

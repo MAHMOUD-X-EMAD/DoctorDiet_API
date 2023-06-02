@@ -7,12 +7,12 @@ namespace DoctorDiet.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PlanController : Controller
+    public class CustomPlanController : Controller
     {
-        private readonly PlanService _planService;
-        private readonly IUnitOfWork _unitOfWork;
+        private CustomPlanService _planService;
+        IUnitOfWork _unitOfWork;
 
-        public PlanController(PlanService planService, IUnitOfWork unitOfWork)
+        public CustomPlanController(CustomPlanService planService, IUnitOfWork unitOfWork)
         {
             _planService = planService;
             _unitOfWork = unitOfWork;
@@ -37,8 +37,19 @@ namespace DoctorDiet.API.Controllers
             return Ok(plan);
         }
 
+        [HttpGet("Days/{id}")]
+        public IActionResult GetDaysById(int id)
+        {
+            var days = _planService.GetDaysById(id);
+            if (days == null)
+                return NotFound();
+
+            _unitOfWork.CommitChanges();
+            return Ok(days);
+        }
+
         [HttpPost]
-        public IActionResult AddPlan(Plan plan)
+        public IActionResult AddPlan(CustomPlan plan)
         {
             var addedPlan = _planService.AddPlan(plan);
             _unitOfWork.CommitChanges();
@@ -46,12 +57,23 @@ namespace DoctorDiet.API.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdatePlan(int id, Plan plan)
+        public IActionResult UpdatePlan(int id, CustomPlan plan)
         {
             if (id != plan.Id)
                 return BadRequest();
 
             _planService.UpdatePlan(plan);
+            _unitOfWork.CommitChanges();
+            return NoContent();
+        }
+
+        [HttpPatch("{id}")]
+        public IActionResult UpdatePlanProperties(int id, CustomPlan plan, params string[] properties)
+        {
+            if (id != plan.Id)
+                return BadRequest();
+
+            _planService.UpdatePlanProperties(plan, properties);
             _unitOfWork.CommitChanges();
             return NoContent();
         }

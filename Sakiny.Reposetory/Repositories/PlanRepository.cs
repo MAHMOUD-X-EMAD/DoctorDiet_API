@@ -11,9 +11,9 @@ using System.Threading.Tasks;
 
 namespace DoctorDiet.Repository.Repositories
 {
-    public class PlanRepository : IPlanRepository
+    public class PlanRepository:IPlanRepository
     {
-        Context _context;
+        private readonly Context _context;
 
         public PlanRepository(Context context)
         {
@@ -32,14 +32,12 @@ namespace DoctorDiet.Repository.Repositories
 
         public Plan GetByID(int id)
         {
-            return _context.Plans.FirstOrDefault(x => EqualityComparer<int>.Default.Equals(x.Id, id));
+            return _context.Plans.FirstOrDefault(x => x.Id == id);
         }
 
         public Plan Add(Plan entity)
         {
-
             _context.Plans.Add(entity);
-
             return entity;
         }
 
@@ -50,41 +48,37 @@ namespace DoctorDiet.Repository.Repositories
 
         public void Update(Plan entity, params string[] properties)
         {
-            var localEntity = _context.Plans.Local.Where(x => EqualityComparer<int>.Default.Equals(x.Id, entity.Id)).FirstOrDefault();
+            var localEntity = _context.Plans.Local.FirstOrDefault(x => x.Id == entity.Id);
 
             EntityEntry entityEntry;
 
-            if (localEntity is null)
+            if (localEntity == null)
             {
                 entityEntry = _context.Plans.Entry(entity);
             }
             else
             {
-                entityEntry =
-                    _context.ChangeTracker.Entries<Plan>()
-                    .Where(x => EqualityComparer<int>.Default.Equals(x.Entity.Id, entity.Id)).FirstOrDefault();
+                entityEntry = _context.ChangeTracker.Entries<Plan>()
+                    .FirstOrDefault(x => x.Entity.Id == entity.Id);
             }
 
             foreach (var property in entityEntry.Properties)
             {
                 if (properties.Contains(property.Metadata.Name))
                 {
-                    property.CurrentValue = entity.GetType().GetProperty(property.Metadata.Name).GetValue(entity);
+                    property.CurrentValue = entity.GetType().GetProperty(property.Metadata.Name)?.GetValue(entity);
                     property.IsModified = true;
                 }
             }
-
         }
 
         public void Delete(int id)
         {
             var entity = GetByID(id);
-            entity.IsDeleted = true;
-        }
-
-        public List<Day> GetDayList(int id)
-        {
-            return _context.Day.Where(x => x.PlanId == id).ToList();
+            if (entity != null)
+            {
+                _context.Plans.Remove(entity);
+            }
         }
     }
 }

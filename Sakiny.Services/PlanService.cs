@@ -1,19 +1,17 @@
-﻿using Sakiny.Repository.Interfaces;
+﻿using DoctorDiet.Models;
+using DoctorDiet.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using DoctorDiet.Models;
-using DoctorDiet.Repository.Interfaces;
-using System.Linq.Expressions;
 
 namespace DoctorDiet.Services
 {
     public class PlanService
     {
-        private IPlanRepository _repository;
+        private readonly IPlanRepository _repository;
 
         public PlanService(IPlanRepository repository)
         {
@@ -35,11 +33,6 @@ namespace DoctorDiet.Services
             return _repository.GetByID(id);
         }
 
-        public List<Day> GetDaysById(int id)
-        {
-            return _repository.GetDayList(id);
-        }
-
         public Plan AddPlan(Plan plan)
         {
             return _repository.Add(plan);
@@ -48,11 +41,6 @@ namespace DoctorDiet.Services
         public void UpdatePlan(Plan plan)
         {
             _repository.Update(plan);
-        }
-
-        public void UpdatePlanProperties(Plan plan, params string[] properties)
-        {
-            _repository.Update(plan, properties);
         }
 
         public void DeletePlan(int id)
