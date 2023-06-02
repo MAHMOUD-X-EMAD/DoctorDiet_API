@@ -215,3 +215,6 @@ D:\ITI-Tasks\DoctorDiet\Sakiny.API\obj\Debug\net7.0\ref\DoctorDiet.API.dll
 D:\ITI-Tasks\DoctorDiet\Sakiny.API\bin\Debug\net7.0\AutoMapper.Extensions.ExpressionMapping.dll
 D:\ITI-Tasks\DoctorDiet\Sakiny.API\bin\Debug\net7.0\DoctorDiet.Profiles.dll
 D:\ITI-Tasks\DoctorDiet\Sakiny.API\bin\Debug\net7.0\DoctorDiet.Profiles.pdb
+E:\DoctorDiet_API\Doctor Diet\Sakiny.API\bin\Debug\net7.0\AutoMapper.Extensions.ExpressionMapping.dll
+E:\DoctorDiet_API\Doctor Diet\Sakiny.API\bin\Debug\net7.0\DoctorDiet.Profiles.dll
+E:\DoctorDiet_API\Doctor Diet\Sakiny.API\bin\Debug\net7.0\DoctorDiet.Profiles.pdb
