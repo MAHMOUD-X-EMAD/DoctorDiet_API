@@ -1,4 +1,5 @@
 ﻿using DoctorDiet.Models;
+using DoctorDiet.Repository.UnitOfWork;
 using DoctorDiet.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,16 +10,19 @@ namespace DoctorDiet.API.Controllers
     public class PlanController : Controller
     {
         private PlanService _planService;
+        IUnitOfWork _unitOfWork;
 
-        public PlanController(PlanService planService)
+        public PlanController(PlanService planService, IUnitOfWork unitOfWork)
         {
             _planService = planService;
+            _unitOfWork = unitOfWork;
         }
 
         [HttpGet]
         public IActionResult GetAllPlans()
         {
             var plans = _planService.GetAllPlans();
+            _unitOfWork.CommitChanges();
             return Ok(plans);
         }
 
@@ -28,6 +32,8 @@ namespace DoctorDiet.API.Controllers
             var plan = _planService.GetPlanById(id);
             if (plan == null)
                 return NotFound();
+
+            _unitOfWork.CommitChanges();
             return Ok(plan);
         }
 
@@ -37,6 +43,8 @@ namespace DoctorDiet.API.Controllers
             var days = _planService.GetDaysById(id);
             if (days == null)
                 return NotFound();
+
+            _unitOfWork.CommitChanges();
             return Ok(days);
         }
 
@@ -44,6 +52,7 @@ namespace DoctorDiet.API.Controllers
         public IActionResult AddPlan(Plan plan)
         {
             var addedPlan = _planService.AddPlan(plan);
+            _unitOfWork.CommitChanges();
             return Ok(addedPlan);
         }
 
@@ -54,6 +63,7 @@ namespace DoctorDiet.API.Controllers
                 return BadRequest();
 
             _planService.UpdatePlan(plan);
+            _unitOfWork.CommitChanges();
             return NoContent();
         }
 
@@ -64,6 +74,7 @@ namespace DoctorDiet.API.Controllers
                 return BadRequest();
 
             _planService.UpdatePlanProperties(plan, properties);
+            _unitOfWork.CommitChanges();
             return NoContent();
         }
 
@@ -71,6 +82,7 @@ namespace DoctorDiet.API.Controllers
         public IActionResult DeletePlan(int id)
         {
             _planService.DeletePlan(id);
+            _unitOfWork.CommitChanges();
             return NoContent();
         }
     }
