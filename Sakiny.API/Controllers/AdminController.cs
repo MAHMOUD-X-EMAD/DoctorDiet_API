@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DoctorDiet.Services;
+using Microsoft.AspNetCore.Mvc;
 using Sakiny.Services;
 
-namespace Sakiny.API.Controllers
+namespace DoctorDiet.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

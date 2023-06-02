@@ -1,7 +1,4 @@
-﻿using Sakiny.Models;
-using Sakiny.Models.Interface;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Sakiny.Data.Extentions;
 
@@ -10,8 +7,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DoctorDiet.Models;
+using DoctorDiet.Models.Interface;
 
-namespace Sakiny.Data
+namespace DoctorDiet.Data
 {
     public class Context : IdentityDbContext<ApplicationUser>
     {
@@ -37,11 +36,6 @@ namespace Sakiny.Data
         public DbSet<PlanMealBridge> planMealBridges { get; set; }
 
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("Data Source=MAHMOUD-EMAD\\SQL19;Initial Catalog=DoctorDiet;Integrated Security=True;Encrypt=False");
-            base.OnConfiguring(optionsBuilder);
-        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

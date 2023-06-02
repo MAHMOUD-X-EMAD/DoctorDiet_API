@@ -1,19 +1,17 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-//using DoctorDiet.DTO;
-using Sakiny.Models;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using AutoMapper;
-using Sakiny.Services;
-using Sakiny.Repository.UnitOfWork;
-using Sakiny.Models;
-using Sakiny.DTO;
+using DoctorDiet.DTO;
+using DoctorDiet.Models;
+using DoctorDiet.Repository.UnitOfWork;
+using DoctorDiet.Services;
+using System;
 
-namespace WebApplication1.Controllers
+namespace DoctorDiet.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -33,25 +31,38 @@ namespace WebApplication1.Controllers
             _unitOfWork = unitOfWork;
         }
 
-        [HttpPost("UserRegister")]
-        public async Task<IActionResult> PatientRegister(RegisterPatientDto registerPatientDto)
+        [HttpPost("PatientRegister")]
+        public async Task<IActionResult> PatientRegister([FromForm] RegisterPatientDto registerPatientDto)
         {
             if (ModelState.IsValid)
             {
+
+              //  using var dataStream = new MemoryStream();  //save image as array of bytes
+              // registerPatientDto.ProfileImage.CopyTo(dataStream);
+
                 ApplicationUser ApplicationUser = _mapper.Map<ApplicationUser>(registerPatientDto);
+                
 
                 IdentityResult result = await userManager.CreateAsync(ApplicationUser, registerPatientDto.Password);
                 RegisterDto registerDto = new RegisterDto();
 
                 if (result.Succeeded)
                 {
-                    await userManager.AddToRoleAsync(ApplicationUser, "User");
+
+
+                    await userManager.AddToRoleAsync(ApplicationUser, "Patient");
                     Patient patient = new Patient();
 
                     patient.Id = ApplicationUser.Id;
-                    user.NationalNumber = registerPatientDto.NationalNumber;
+                    patient.Gender = registerPatientDto.Gender;
+                    patient.Height = registerPatientDto.Height;
+                    patient.Weight = registerPatientDto.Weight;
+                    patient.Goal = registerPatientDto.Goal;
+                    patient.BirthDate = registerPatientDto.BirthDate;
+                    patient.Diseases = registerPatientDto.Diseases;
 
-                    _accountService.AddUser(user);
+
+                    _accountService.AddPatient(patient);
                     _unitOfWork.CommitChanges();
 
                     registerDto.Message = "Success";
@@ -68,7 +79,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost("DoctorRegister")]
-        public async Task<IActionResult> OwnerRegister(RegisterDoctorDto registerDoctorDto)
+        public async Task<IActionResult> DoctorRegister([FromForm]RegisterDoctorDto registerDoctorDto)
         {
             if (ModelState.IsValid)
             {
@@ -79,11 +90,12 @@ namespace WebApplication1.Controllers
 
                 if (result.Succeeded)
                 {
-                    await userManager.AddToRoleAsync(ApplicationUser, "Owner");
+                    await userManager.AddToRoleAsync(ApplicationUser, "Doctor");
                     Doctor doctor = new Doctor();
                     doctor.Id = ApplicationUser.Id;
                     doctor.Specialization = registerDoctorDto.Specialization;
-
+                    doctor.Location = registerDoctorDto.Location;
+                    doctor.ContactInfo= registerDoctorDto.ContactInfo;
 
                     _accountService.AddDoctor(doctor);
                     _unitOfWork.CommitChanges();
@@ -104,7 +116,7 @@ namespace WebApplication1.Controllers
 
 
         [HttpPost("AdminRegister")]
-        public async Task<IActionResult> AdminRegister(RegisterAdminDto registerAdminDto)
+        public async Task<IActionResult> AdminRegister([FromForm]RegisterAdminDto registerAdminDto)
         {
             if (ModelState.IsValid)
             {
@@ -118,6 +130,8 @@ namespace WebApplication1.Controllers
                     await userManager.AddToRoleAsync(ApplicationUser, "Admin");
                     Admin admin = new Admin();
                     admin.Id = ApplicationUser.Id;
+                  //  admin.ApplicationUser.ProfileImage = registerAdminDto.ProfileImage;
+                   
 
 
                     _accountService.AddAdmin(admin);

@@ -1,10 +1,6 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
-using Sakiny.Repository.Interfaces;
-using Sakiny.Repository.UnitOfWork;
-//using DoctorDiet.DTO;
-using Sakiny.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -13,3 +13,18 @@ E:\DoctorDiet_API\Doctor Diet\Sakiny.DTO\obj\Debug\net7.0\DoctorDiet.DTO.dll
 E:\DoctorDiet_API\Doctor Diet\Sakiny.DTO\obj\Debug\net7.0\refint\DoctorDiet.DTO.dll
 E:\DoctorDiet_API\Doctor Diet\Sakiny.DTO\obj\Debug\net7.0\DoctorDiet.DTO.pdb
 E:\DoctorDiet_API\Doctor Diet\Sakiny.DTO\obj\Debug\net7.0\ref\DoctorDiet.DTO.dll
+D:\ITI-Tasks\DoctorDiet\Sakiny.DTO\obj\Debug\net7.0\DoctorDiet.DTO.csproj.AssemblyReference.cache
+D:\ITI-Tasks\DoctorDiet\Sakiny.DTO\obj\Debug\net7.0\DoctorDiet.DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI-Tasks\DoctorDiet\Sakiny.DTO\obj\Debug\net7.0\DoctorDiet.DTO.AssemblyInfoInputs.cache
+D:\ITI-Tasks\DoctorDiet\Sakiny.DTO\obj\Debug\net7.0\DoctorDiet.DTO.AssemblyInfo.cs
+D:\ITI-Tasks\DoctorDiet\Sakiny.DTO\obj\Debug\net7.0\DoctorDiet.DTO.csproj.CoreCompileInputs.cache
+D:\ITI-Tasks\DoctorDiet\Sakiny.DTO\obj\Debug\net7.0\DoctorDiet.DTO.dll
+D:\ITI-Tasks\DoctorDiet\Sakiny.DTO\obj\Debug\net7.0\refint\DoctorDiet.DTO.dll
+D:\ITI-Tasks\DoctorDiet\Sakiny.DTO\obj\Debug\net7.0\DoctorDiet.DTO.pdb
+D:\ITI-Tasks\DoctorDiet\Sakiny.DTO\bin\Debug\net7.0\DoctorDiet.DTO.deps.json
+D:\ITI-Tasks\DoctorDiet\Sakiny.DTO\bin\Debug\net7.0\DoctorDiet.DTO.dll
+D:\ITI-Tasks\DoctorDiet\Sakiny.DTO\bin\Debug\net7.0\DoctorDiet.DTO.pdb
+D:\ITI-Tasks\DoctorDiet\Sakiny.DTO\bin\Debug\net7.0\DoctorDiet.Models.dll
+D:\ITI-Tasks\DoctorDiet\Sakiny.DTO\bin\Debug\net7.0\DoctorDiet.Models.pdb
+D:\ITI-Tasks\DoctorDiet\Sakiny.DTO\obj\Debug\net7.0\DoctorDiet.DTO.csproj.CopyComplete
+D:\ITI-Tasks\DoctorDiet\Sakiny.DTO\obj\Debug\net7.0\ref\DoctorDiet.DTO.dll

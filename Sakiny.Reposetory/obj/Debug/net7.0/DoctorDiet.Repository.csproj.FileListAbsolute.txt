@@ -36,3 +36,22 @@ E:\DoctorDiet_API\Doctor Diet\Sakiny.Reposetory\obj\Debug\net7.0\DoctorDiet.Repo
 E:\DoctorDiet_API\Doctor Diet\Sakiny.Reposetory\obj\Debug\net7.0\refint\DoctorDiet.Repository.dll
 E:\DoctorDiet_API\Doctor Diet\Sakiny.Reposetory\obj\Debug\net7.0\DoctorDiet.Repository.pdb
 E:\DoctorDiet_API\Doctor Diet\Sakiny.Reposetory\obj\Debug\net7.0\ref\DoctorDiet.Repository.dll
+D:\ITI-Tasks\DoctorDiet\Sakiny.Reposetory\bin\Debug\net7.0\DoctorDiet.Repository.deps.json
+D:\ITI-Tasks\DoctorDiet\Sakiny.Reposetory\bin\Debug\net7.0\DoctorDiet.Repository.dll
+D:\ITI-Tasks\DoctorDiet\Sakiny.Reposetory\bin\Debug\net7.0\DoctorDiet.Repository.pdb
+D:\ITI-Tasks\DoctorDiet\Sakiny.Reposetory\bin\Debug\net7.0\DoctorDiet.Data.dll
+D:\ITI-Tasks\DoctorDiet\Sakiny.Reposetory\bin\Debug\net7.0\DoctorDiet.DTO.dll
+D:\ITI-Tasks\DoctorDiet\Sakiny.Reposetory\bin\Debug\net7.0\DoctorDiet.Models.dll
+D:\ITI-Tasks\DoctorDiet\Sakiny.Reposetory\bin\Debug\net7.0\DoctorDiet.Data.pdb
+D:\ITI-Tasks\DoctorDiet\Sakiny.Reposetory\bin\Debug\net7.0\DoctorDiet.DTO.pdb
+D:\ITI-Tasks\DoctorDiet\Sakiny.Reposetory\bin\Debug\net7.0\DoctorDiet.Models.pdb
+D:\ITI-Tasks\DoctorDiet\Sakiny.Reposetory\obj\Debug\net7.0\DoctorDiet.Repository.csproj.AssemblyReference.cache
+D:\ITI-Tasks\DoctorDiet\Sakiny.Reposetory\obj\Debug\net7.0\DoctorDiet.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI-Tasks\DoctorDiet\Sakiny.Reposetory\obj\Debug\net7.0\DoctorDiet.Repository.AssemblyInfoInputs.cache
+D:\ITI-Tasks\DoctorDiet\Sakiny.Reposetory\obj\Debug\net7.0\DoctorDiet.Repository.AssemblyInfo.cs
+D:\ITI-Tasks\DoctorDiet\Sakiny.Reposetory\obj\Debug\net7.0\DoctorDiet.Repository.csproj.CoreCompileInputs.cache
+D:\ITI-Tasks\DoctorDiet\Sakiny.Reposetory\obj\Debug\net7.0\DoctorDiet.Repository.csproj.CopyComplete
+D:\ITI-Tasks\DoctorDiet\Sakiny.Reposetory\obj\Debug\net7.0\DoctorDiet.Repository.dll
+D:\ITI-Tasks\DoctorDiet\Sakiny.Reposetory\obj\Debug\net7.0\refint\DoctorDiet.Repository.dll
+D:\ITI-Tasks\DoctorDiet\Sakiny.Reposetory\obj\Debug\net7.0\DoctorDiet.Repository.pdb
+D:\ITI-Tasks\DoctorDiet\Sakiny.Reposetory\obj\Debug\net7.0\ref\DoctorDiet.Repository.dll

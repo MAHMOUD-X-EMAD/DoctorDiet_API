@@ -51,6 +51,22 @@
           }
         }
       },
+      "AutoMapper.Extensions.ExpressionMapping/6.0.4": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "[12.0.0, 13.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.1/AutoMapper.Extensions.ExpressionMapping.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.Extensions.ExpressionMapping.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.1": {
         "type": "package",
         "dependencies": {
@@ -2154,6 +2170,22 @@
           "bin/placeholder/DoctorDiet.Models.dll": {}
         }
       },
+      "DoctorDiet.Profiles/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "AutoMapper.Extensions.ExpressionMapping": "6.0.4",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "DoctorDiet.DTO": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DoctorDiet.Profiles.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DoctorDiet.Profiles.dll": {}
+        }
+      },
       "DoctorDiet.Repository/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -2246,6 +2278,20 @@
         "icon.png",
         "lib/netstandard2.1/AutoMapper.dll",
         "lib/netstandard2.1/AutoMapper.xml"
+      ]
+    },
+    "AutoMapper.Extensions.ExpressionMapping/6.0.4": {
+      "sha512": "scgLSSt/Ju2Fhg5xn8Ckdebg+mh8MQ9bQpTBvxj9jQP0kinGmtcsg9BxppnKffYVaec16GvbrKmWI6z1Ce6TPg==",
+      "type": "package",
+      "path": "automapper.extensions.expressionmapping/6.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "automapper.extensions.expressionmapping.6.0.4.nupkg.sha512",
+        "automapper.extensions.expressionmapping.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/AutoMapper.Extensions.ExpressionMapping.dll",
+        "lib/netstandard2.1/AutoMapper.Extensions.ExpressionMapping.xml"
       ]
     },
     "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.1": {
@@ -6486,10 +6532,15 @@
       "path": "../Sakiny.Models/DoctorDiet.Models.csproj",
       "msbuildProject": "../Sakiny.Models/DoctorDiet.Models.csproj"
     },
+    "DoctorDiet.Profiles/1.0.0": {
+      "type": "project",
+      "path": "../DoctorDiet.Profile/DoctorDiet.Profiles.csproj",
+      "msbuildProject": "../DoctorDiet.Profile/DoctorDiet.Profiles.csproj"
+    },
     "DoctorDiet.Repository/1.0.0": {
       "type": "project",
-      "path": "../Saking.Reposetory/DoctorDiet.Repository.csproj",
-      "msbuildProject": "../Saking.Reposetory/DoctorDiet.Repository.csproj"
+      "path": "../Sakiny.Reposetory/DoctorDiet.Repository.csproj",
+      "msbuildProject": "../Sakiny.Reposetory/DoctorDiet.Repository.csproj"
     },
     "DoctorDiet.Services/1.0.0": {
       "type": "project",
@@ -6505,6 +6556,7 @@
       "Autofac.Extensions.DependencyInjection >= 8.0.0",
       "DoctorDiet.DTO >= 1.0.0",
       "DoctorDiet.Data >= 1.0.0",
+      "DoctorDiet.Profiles >= 1.0.0",
       "DoctorDiet.Repository >= 1.0.0",
       "DoctorDiet.Services >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.1",
@@ -6516,23 +6568,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\20106\\.nuget\\packages\\": {},
+    "C:\\Users\\Electronica Care\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.API\\DoctorDiet.API.csproj",
+      "projectUniqueName": "D:\\ITI-Tasks\\DoctorDiet\\Sakiny.API\\DoctorDiet.API.csproj",
       "projectName": "DoctorDiet.API",
-      "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.API\\DoctorDiet.API.csproj",
-      "packagesPath": "C:\\Users\\20106\\.nuget\\packages\\",
-      "outputPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.API\\obj\\",
+      "projectPath": "D:\\ITI-Tasks\\DoctorDiet\\Sakiny.API\\DoctorDiet.API.csproj",
+      "packagesPath": "C:\\Users\\Electronica Care\\.nuget\\packages\\",
+      "outputPath": "D:\\ITI-Tasks\\DoctorDiet\\Sakiny.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\20106\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Electronica Care\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6547,20 +6599,20 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "E:\\DoctorDiet_API\\Doctor Diet\\Saking.Reposetory\\DoctorDiet.Repository.csproj": {
-              "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Saking.Reposetory\\DoctorDiet.Repository.csproj"
+            "D:\\ITI-Tasks\\DoctorDiet\\DoctorDiet.Profile\\DoctorDiet.Profiles.csproj": {
+              "projectPath": "D:\\ITI-Tasks\\DoctorDiet\\DoctorDiet.Profile\\DoctorDiet.Profiles.csproj"
             },
-            "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Data\\DoctorDiet.Data.csproj": {
-              "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Data\\DoctorDiet.Data.csproj"
+            "D:\\ITI-Tasks\\DoctorDiet\\Sakiny.Data\\DoctorDiet.Data.csproj": {
+              "projectPath": "D:\\ITI-Tasks\\DoctorDiet\\Sakiny.Data\\DoctorDiet.Data.csproj"
             },
-            "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.DTO\\DoctorDiet.DTO.csproj": {
-              "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.DTO\\DoctorDiet.DTO.csproj"
+            "D:\\ITI-Tasks\\DoctorDiet\\Sakiny.DTO\\DoctorDiet.DTO.csproj": {
+              "projectPath": "D:\\ITI-Tasks\\DoctorDiet\\Sakiny.DTO\\DoctorDiet.DTO.csproj"
             },
-            "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Reposetory\\DoctorDiet.Repository.csproj": {
-              "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Reposetory\\DoctorDiet.Repository.csproj"
+            "D:\\ITI-Tasks\\DoctorDiet\\Sakiny.Reposetory\\DoctorDiet.Repository.csproj": {
+              "projectPath": "D:\\ITI-Tasks\\DoctorDiet\\Sakiny.Reposetory\\DoctorDiet.Repository.csproj"
             },
-            "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Services\\DoctorDiet.Services.csproj": {
-              "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Services\\DoctorDiet.Services.csproj"
+            "D:\\ITI-Tasks\\DoctorDiet\\Sakiny.Services\\DoctorDiet.Services.csproj": {
+              "projectPath": "D:\\ITI-Tasks\\DoctorDiet\\Sakiny.Services\\DoctorDiet.Services.csproj"
             }
           }
         }

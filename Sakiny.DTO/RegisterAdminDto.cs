@@ -1,7 +1,6 @@
-﻿using Sakiny.Models;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace Sakiny.DTO
+namespace DoctorDiet.DTO
 {
     public class RegisterAdminDto
     {
@@ -11,13 +10,12 @@ namespace Sakiny.DTO
 
         [DataType(DataType.Password)]
         public string Password { get; set; }
-
+         
         [DataType(DataType.Password)]
         [Compare("Password")]
         public string ConfirmPassword { get; set; }
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
-        public List<string> ContactInfo { get; set; }
 
         public byte[] ProfileImage { get; set; }
 

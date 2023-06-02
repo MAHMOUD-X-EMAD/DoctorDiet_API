@@ -6,13 +6,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sakiny.Models
+namespace DoctorDiet.Models
 {
     public class ApplicationUser : IdentityUser
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string ContactInfo { get; set; }
+        //public string FirstName { get; set; }
+        //public string LastName { get; set; }
+        //public string ContactInfo { get; set; }
+        public byte[] ProfileImage { get; set; }
+
 
         [DefaultValue("false")]
         public bool IsDeleted { get; set; }

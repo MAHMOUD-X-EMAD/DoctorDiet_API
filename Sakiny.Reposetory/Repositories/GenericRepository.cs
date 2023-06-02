@@ -1,16 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
-using Sakiny.Data;
-using Sakiny.Models;
-using Sakiny.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using Sakiny.Models.Interface;
+using DoctorDiet.Data;
+using DoctorDiet.Repository.Interfaces;
+using DoctorDiet.Models.Interface;
 
-namespace Sakiny.Repository.Reposetories
+namespace DoctorDiet.Repository.Repositories
 {
     public class GenericRepository<T,Y> : IGenericRepository<T,Y> where T : class, IBaseModel<Y>
     {

@@ -1,16 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc.Infrastructure;
+﻿using DoctorDiet.Data;
+using DoctorDiet.Models;
+using DoctorDiet.Repository.Interfaces;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.Identity.Client;
-using Sakiny.Data;
-//using DoctorDiet.DTO;
-using Sakiny.Models;
-using Sakiny.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sakiny.Repository.Reposetories
+namespace DoctorDiet.Repository.Reposetories
 {
     public class AccountRepository:IAccountRepository
     {

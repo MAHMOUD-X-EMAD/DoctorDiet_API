@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sakiny.DTO
+namespace DoctorDiet.DTO
 {
     public class LoginUserDto
     {

@@ -1,15 +1,14 @@
-
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using DoctorDiet.API.Config;
+using DoctorDiet.Data;
+using DoctorDiet.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using Sakiny.API.Config;
-using Sakiny.Data;
-using Sakiny.Models;
-//using DoctorDiet.Profiles;
+using Sakiny.Profiles;
 using System.Diagnostics;
 using System.Text;
 
@@ -35,19 +34,19 @@ namespace Sakiny.API
             builder.Host.ConfigureContainer<ContainerBuilder>(opt =>
                 opt.RegisterModule(new AutoFacModule()));
 
-      //      builder.Services.AddAutoMapper(typeof(RegisterAdminProfile).Assembly);
-      //      builder.Services.AddAutoMapper(typeof(RegisterUserProfile).Assembly);
-      //      builder.Services.AddAutoMapper(typeof(RegisterOwnerProfile).Assembly);
-      //      builder.Services.AddAutoMapper(typeof(RegisterCookerProfile).Assembly);
-      //      builder.Services.AddAutoMapper(typeof(ReportCreateProfile).Assembly);
+            builder.Services.AddAutoMapper(typeof(RegisterAdminProfile).Assembly);
+            builder.Services.AddAutoMapper(typeof(RegisterPatientProfile).Assembly);
+            builder.Services.AddAutoMapper(typeof(RegisterDoctorProfile).Assembly);
 
-      //      builder.Services.AddAutoMapper(typeof(ApartmentProfile).Assembly);
-      //builder.Services.AddAutoMapper(typeof(ApartmentImageProfile).Assembly);
+            //      builder.Services.AddAutoMapper(typeof(ReportCreateProfile).Assembly);
 
-
+            //      builder.Services.AddAutoMapper(typeof(ApartmentProfile).Assembly);
+            //builder.Services.AddAutoMapper(typeof(ApartmentImageProfile).Assembly);
 
 
-      builder.Services.AddDbContext<Context>(options =>
+
+
+            builder.Services.AddDbContext<Context>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("cs"))
                 .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking)
                 .LogTo(log => Debug.WriteLine(log), LogLevel.Information)

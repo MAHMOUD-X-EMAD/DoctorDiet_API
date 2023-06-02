@@ -1,7 +1,7 @@
-﻿using Sakiny.Models.Interface;
+﻿using DoctorDiet.Models.Interface;
 using System.ComponentModel;
 
-namespace Sakiny.Models
+namespace DoctorDiet.Models
 {
     public class Day:IBaseModel<int>  {
         public int Id { get; set; }

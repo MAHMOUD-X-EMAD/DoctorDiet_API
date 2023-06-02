@@ -1,9 +1,5 @@
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
-//using DoctorDiet.DTO;
-using Sakiny.Models;
-using Sakiny.Repository.Interfaces;
-using Sakiny.Repository.UnitOfWork;
 using System;
 using System.Collections.Generic;
 using System.Linq;

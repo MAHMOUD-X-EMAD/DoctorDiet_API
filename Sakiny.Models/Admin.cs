@@ -6,9 +6,9 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Sakiny.Models.Interface;
+using DoctorDiet.Models.Interface;
 
-namespace Sakiny.Models
+namespace DoctorDiet.Models
 {
     public class Admin:IBaseModel<string>
     {
@@ -16,6 +16,8 @@ namespace Sakiny.Models
         [ForeignKey("ApplicationUser")]
         public string Id { get; set; }
         public ApplicationUser ApplicationUser { get; set; }
+        public string FullName { get; set; }
+
 
         [DefaultValue("false")]
         public bool IsDeleted { get; set; }

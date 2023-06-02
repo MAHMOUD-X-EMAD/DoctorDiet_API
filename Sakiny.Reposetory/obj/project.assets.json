@@ -5731,23 +5731,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\20106\\.nuget\\packages\\": {},
+    "C:\\Users\\Electronica Care\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Reposetory\\DoctorDiet.Repository.csproj",
+      "projectUniqueName": "D:\\ITI-Tasks\\DoctorDiet\\Sakiny.Reposetory\\DoctorDiet.Repository.csproj",
       "projectName": "DoctorDiet.Repository",
-      "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Reposetory\\DoctorDiet.Repository.csproj",
-      "packagesPath": "C:\\Users\\20106\\.nuget\\packages\\",
-      "outputPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Reposetory\\obj\\",
+      "projectPath": "D:\\ITI-Tasks\\DoctorDiet\\Sakiny.Reposetory\\DoctorDiet.Repository.csproj",
+      "packagesPath": "C:\\Users\\Electronica Care\\.nuget\\packages\\",
+      "outputPath": "D:\\ITI-Tasks\\DoctorDiet\\Sakiny.Reposetory\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\20106\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Electronica Care\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5762,14 +5762,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Data\\DoctorDiet.Data.csproj": {
-              "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Data\\DoctorDiet.Data.csproj"
+            "D:\\ITI-Tasks\\DoctorDiet\\Sakiny.Data\\DoctorDiet.Data.csproj": {
+              "projectPath": "D:\\ITI-Tasks\\DoctorDiet\\Sakiny.Data\\DoctorDiet.Data.csproj"
             },
-            "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.DTO\\DoctorDiet.DTO.csproj": {
-              "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.DTO\\DoctorDiet.DTO.csproj"
+            "D:\\ITI-Tasks\\DoctorDiet\\Sakiny.DTO\\DoctorDiet.DTO.csproj": {
+              "projectPath": "D:\\ITI-Tasks\\DoctorDiet\\Sakiny.DTO\\DoctorDiet.DTO.csproj"
             },
-            "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Models\\DoctorDiet.Models.csproj": {
-              "projectPath": "E:\\DoctorDiet_API\\Doctor Diet\\Sakiny.Models\\DoctorDiet.Models.csproj"
+            "D:\\ITI-Tasks\\DoctorDiet\\Sakiny.Models\\DoctorDiet.Models.csproj": {
+              "projectPath": "D:\\ITI-Tasks\\DoctorDiet\\Sakiny.Models\\DoctorDiet.Models.csproj"
             }
           }
         }

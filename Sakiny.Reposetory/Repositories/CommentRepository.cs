@@ -1,6 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
-using Sakiny.Data;
-using Sakiny.Models;
+﻿using DoctorDiet.Data;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Sakiny.Repository.Interfaces;
 using System;
 using System.Collections.Generic;

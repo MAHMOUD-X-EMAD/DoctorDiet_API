@@ -1,7 +1,6 @@
-﻿using Sakiny.Models;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace Sakiny.DTO
+namespace DoctorDiet.DTO
 {
     public class RegisterPatientDto:RegisterAdminDto
     {

@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
-using Sakiny.Models.Interface;
+using DoctorDiet.Models.Interface;
 
-namespace Sakiny.Models
+namespace DoctorDiet.Models
 {
     public class CustomPlan: IBaseModel<int>
     {

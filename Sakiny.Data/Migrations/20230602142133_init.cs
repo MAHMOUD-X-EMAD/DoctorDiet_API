@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Sakiny.Data.Migrations
+namespace DoctorDiet.Data.Migrations
 {
     /// <inheritdoc />
     public partial class init : Migration
@@ -30,9 +30,7 @@ namespace Sakiny.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ContactInfo = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ProfileImage = table.Column<byte[]>(type: "varbinary(max)", nullable: false),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -80,6 +78,7 @@ namespace Sakiny.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    FullName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
@@ -183,8 +182,10 @@ namespace Sakiny.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    FullName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false),
-                    Image = table.Column<byte[]>(type: "varbinary(max)", nullable: false)
+                    Specialization = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Location = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -198,6 +199,26 @@ namespace Sakiny.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "ContactInfo",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    contactInfo = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
+                    DoctorId = table.Column<string>(type: "nvarchar(450)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ContactInfo", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_ContactInfo_Doctors_DoctorId",
+                        column: x => x.DoctorId,
+                        principalTable: "Doctors",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Patient",
                 columns: table => new
                 {
@@ -206,6 +227,8 @@ namespace Sakiny.Data.Migrations
                     Gender = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Weight = table.Column<double>(type: "float", nullable: false),
                     Height = table.Column<double>(type: "float", nullable: false),
+                    Subscribed = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Goal = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     BirthDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Diseases = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Calories = table.Column<int>(type: "int", nullable: false),
@@ -299,8 +322,12 @@ namespace Sakiny.Data.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     PatientId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    DateFrom = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DateTo = table.Column<DateTime>(type: "datetime2", nullable: false),
                     CaloriesFrom = table.Column<int>(type: "int", nullable: false),
                     CaloriesTo = table.Column<int>(type: "int", nullable: false),
+                    Duration = table.Column<int>(type: "int", nullable: false),
+                    NoeatId = table.Column<int>(type: "int", nullable: false),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false),
                     DoctorId = table.Column<string>(type: "nvarchar(450)", nullable: true)
                 },
@@ -312,6 +339,12 @@ namespace Sakiny.Data.Migrations
                         column: x => x.DoctorId,
                         principalTable: "Doctors",
                         principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Plans_NoEat_NoeatId",
+                        column: x => x.NoeatId,
+                        principalTable: "NoEat",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.NoAction);
                     table.ForeignKey(
                         name: "FK_Plans_Patient_PatientId",
                         column: x => x.PatientId,
@@ -399,7 +432,7 @@ namespace Sakiny.Data.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    PlanId = table.Column<int>(type: "int", nullable: false),
+                    MealId = table.Column<int>(type: "int", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CategoryId = table.Column<int>(type: "int", nullable: false),
                     Image = table.Column<byte[]>(type: "varbinary(max)", nullable: false),
@@ -415,8 +448,8 @@ namespace Sakiny.Data.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.NoAction);
                     table.ForeignKey(
-                        name: "FK_Meal_CustomPlans_PlanId",
-                        column: x => x.PlanId,
+                        name: "FK_Meal_CustomPlans_MealId",
+                        column: x => x.MealId,
                         principalTable: "CustomPlans",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.NoAction);
@@ -527,6 +560,11 @@ namespace Sakiny.Data.Migrations
                 column: "DayId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_ContactInfo_DoctorId",
+                table: "ContactInfo",
+                column: "DoctorId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_customPlanMealBridges_CustomPlanId",
                 table: "customPlanMealBridges",
                 column: "CustomPlanId");
@@ -557,9 +595,9 @@ namespace Sakiny.Data.Migrations
                 column: "CategoryId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Meal_PlanId",
+                name: "IX_Meal_MealId",
                 table: "Meal",
-                column: "PlanId");
+                column: "MealId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_NoEat_PatientId",
@@ -597,6 +635,11 @@ namespace Sakiny.Data.Migrations
                 column: "DoctorId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Plans_NoeatId",
+                table: "Plans",
+                column: "NoeatId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Plans_PatientId",
                 table: "Plans",
                 column: "PatientId");
@@ -627,10 +670,10 @@ namespace Sakiny.Data.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "customPlanMealBridges");
+                name: "ContactInfo");
 
             migrationBuilder.DropTable(
-                name: "NoEat");
+                name: "customPlanMealBridges");
 
             migrationBuilder.DropTable(
                 name: "Notes");
@@ -655,6 +698,9 @@ namespace Sakiny.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "Plans");
+
+            migrationBuilder.DropTable(
+                name: "NoEat");
 
             migrationBuilder.DropTable(
                 name: "Patient");

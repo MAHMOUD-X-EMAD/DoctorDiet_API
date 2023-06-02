@@ -6,9 +6,9 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Sakiny.Models.Interface;
+using DoctorDiet.Models.Interface;
 
-namespace Sakiny.Models
+namespace DoctorDiet.Models
 {
     public class Doctor:IBaseModel<string>
     {
@@ -17,10 +17,12 @@ namespace Sakiny.Models
         public string Id { get; set; }
         public ApplicationUser ApplicationUser { get; set; }
 
+        public string FullName { get; set; }
+
         [DefaultValue("false")]
         public bool IsDeleted { get; set; }
 
-        public byte[] Image { get; set; }
+        public List<ContactInfo> ContactInfo { get; set; }
 
         public virtual List<Plan> Plan { get; set; }
 
