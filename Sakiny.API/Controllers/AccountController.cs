@@ -32,16 +32,15 @@ namespace DoctorDiet.API.Controllers
         }
 
         [HttpPost("PatientRegister")]
-        public async Task<IActionResult> PatientRegister([FromForm] RegisterPatientDto registerPatientDto)
+        public async Task<IActionResult> PatientRegister([FromForm]RegisterPatientDto registerPatientDto)
         {
             if (ModelState.IsValid)
-            {
-
-              //  using var dataStream = new MemoryStream();  //save image as array of bytes
-              // registerPatientDto.ProfileImage.CopyTo(dataStream);
+            { 
+                using var dataStream=new MemoryStream();
+                registerPatientDto.ProfileImage.CopyTo(dataStream);
 
                 ApplicationUser ApplicationUser = _mapper.Map<ApplicationUser>(registerPatientDto);
-                
+                ApplicationUser.ProfileImage=dataStream.ToArray();
 
                 IdentityResult result = await userManager.CreateAsync(ApplicationUser, registerPatientDto.Password);
                 RegisterDto registerDto = new RegisterDto();
@@ -54,12 +53,15 @@ namespace DoctorDiet.API.Controllers
                     Patient patient = new Patient();
 
                     patient.Id = ApplicationUser.Id;
+                    patient.FullName=registerPatientDto.FullName;
                     patient.Gender = registerPatientDto.Gender;
                     patient.Height = registerPatientDto.Height;
                     patient.Weight = registerPatientDto.Weight;
                     patient.Goal = registerPatientDto.Goal;
                     patient.BirthDate = registerPatientDto.BirthDate;
                     patient.Diseases = registerPatientDto.Diseases;
+                    patient.ApplicationUser= ApplicationUser;
+                   
 
 
                     _accountService.AddPatient(patient);
@@ -83,7 +85,11 @@ namespace DoctorDiet.API.Controllers
         {
             if (ModelState.IsValid)
             {
+                using var dataStream=new MemoryStream();
+                registerDoctorDto.ProfileImage.CopyTo(dataStream);
+
                 ApplicationUser ApplicationUser = _mapper.Map<ApplicationUser>(registerDoctorDto);
+                ApplicationUser.ProfileImage=dataStream.ToArray();
 
                 IdentityResult result = await userManager.CreateAsync(ApplicationUser, registerDoctorDto.Password);
                 RegisterDto registerDto = new RegisterDto();
@@ -93,6 +99,8 @@ namespace DoctorDiet.API.Controllers
                     await userManager.AddToRoleAsync(ApplicationUser, "Doctor");
                     Doctor doctor = new Doctor();
                     doctor.Id = ApplicationUser.Id;
+                    doctor.FullName=registerDoctorDto.FullName;
+                    doctor.ApplicationUser= ApplicationUser;            
                     doctor.Specialization = registerDoctorDto.Specialization;
                     doctor.Location = registerDoctorDto.Location;
                     doctor.ContactInfo= registerDoctorDto.ContactInfo;
@@ -120,7 +128,11 @@ namespace DoctorDiet.API.Controllers
         {
             if (ModelState.IsValid)
             {
+                using var dataStream = new MemoryStream();
+                registerAdminDto.ProfileImage.CopyTo(dataStream);
+
                 ApplicationUser ApplicationUser = _mapper.Map<ApplicationUser>(registerAdminDto);
+                ApplicationUser.ProfileImage=dataStream.ToArray();
 
                 IdentityResult result = await userManager.CreateAsync(ApplicationUser, registerAdminDto.Password);
                 RegisterDto registerDto = new RegisterDto();
@@ -130,7 +142,9 @@ namespace DoctorDiet.API.Controllers
                     await userManager.AddToRoleAsync(ApplicationUser, "Admin");
                     Admin admin = new Admin();
                     admin.Id = ApplicationUser.Id;
-                  //  admin.ApplicationUser.ProfileImage = registerAdminDto.ProfileImage;
+                    admin.FullName= registerAdminDto.FullName;
+                    admin.ApplicationUser = ApplicationUser;
+                    
                    
 
 

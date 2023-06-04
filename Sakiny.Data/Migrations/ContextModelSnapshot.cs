@@ -390,7 +390,7 @@ namespace DoctorDiet.Data.Migrations
                     b.Property<DateTime>("BirthDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("Calories")
+                    b.Property<int?>("Calories")
                         .HasColumnType("int");
 
                     b.Property<string>("Diseases")
@@ -398,7 +398,6 @@ namespace DoctorDiet.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DoctorId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("FullName")
@@ -419,11 +418,7 @@ namespace DoctorDiet.Data.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<int>("PlanId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Subscribed")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("Weight")
@@ -777,11 +772,9 @@ namespace DoctorDiet.Data.Migrations
 
             modelBuilder.Entity("DoctorDiet.Models.Patient", b =>
                 {
-                    b.HasOne("DoctorDiet.Models.Doctor", "Doctor")
+                    b.HasOne("DoctorDiet.Models.Doctor", null)
                         .WithMany("Patients")
-                        .HasForeignKey("DoctorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("DoctorId");
 
                     b.HasOne("DoctorDiet.Models.ApplicationUser", "ApplicationUser")
                         .WithMany()
@@ -790,8 +783,6 @@ namespace DoctorDiet.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("ApplicationUser");
-
-                    b.Navigation("Doctor");
                 });
 
             modelBuilder.Entity("DoctorDiet.Models.Plan", b =>

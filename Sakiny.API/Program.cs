@@ -3,6 +3,7 @@ using Autofac.Extensions.DependencyInjection;
 using DoctorDiet.API.Config;
 using DoctorDiet.Data;
 using DoctorDiet.Models;
+using DoctorDiet.Profiles;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -38,12 +39,7 @@ namespace Sakiny.API
             builder.Services.AddAutoMapper(typeof(RegisterPatientProfile).Assembly);
             builder.Services.AddAutoMapper(typeof(RegisterDoctorProfile).Assembly);
 
-            //      builder.Services.AddAutoMapper(typeof(ReportCreateProfile).Assembly);
-
-            //      builder.Services.AddAutoMapper(typeof(ApartmentProfile).Assembly);
-            //builder.Services.AddAutoMapper(typeof(ApartmentImageProfile).Assembly);
-
-
+            builder.Services.AddAutoMapper(typeof(NoteCreateProfile).Assembly);
 
 
             builder.Services.AddDbContext<Context>(options =>

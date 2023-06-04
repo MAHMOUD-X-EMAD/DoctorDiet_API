@@ -13,7 +13,8 @@ namespace Sakiny.Profiles
     {
         public RegisterAdminProfile()
         {
-            CreateMap<RegisterAdminDto, ApplicationUser>();
+            CreateMap<RegisterAdminDto, ApplicationUser>()
+            .ForMember(dst => dst.ProfileImage, opt =>opt.Ignore());
         }
     }
 }

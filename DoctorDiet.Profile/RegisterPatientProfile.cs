@@ -13,7 +13,8 @@ namespace Sakiny.Profiles
     {
         public RegisterPatientProfile()
         {
-            CreateMap<RegisterPatientDto, ApplicationUser>();
+            CreateMap<RegisterPatientDto, ApplicationUser>()
+            .ForMember(dst => dst.ProfileImage, opt => opt.Ignore());
         }
     }
 }

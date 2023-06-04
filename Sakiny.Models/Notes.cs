@@ -13,9 +13,10 @@ namespace DoctorDiet.Models
         [ForeignKey("Day")]
         public int DayId { get; set; }
         public string Text { get; set; }
-        [DefaultValue("false")]
-        public bool IsDeleted { get; set; }
         public virtual Day Day { get; set; }
         public virtual Doctor Doctor { get; set; }
+
+        [DefaultValue("false")]
+        public bool IsDeleted { get; set; }
     }
 }

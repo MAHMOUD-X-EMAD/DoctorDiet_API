@@ -1,6 +1,5 @@
 ﻿using DoctorDiet.Services;
 using Microsoft.AspNetCore.Mvc;
-using Sakiny.Services;
 
 namespace DoctorDiet.API.Controllers
 {

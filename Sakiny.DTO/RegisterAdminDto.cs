@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations;
 
 namespace DoctorDiet.DTO
 {
@@ -17,7 +18,7 @@ namespace DoctorDiet.DTO
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
-        public byte[] ProfileImage { get; set; }
+        public IFormFile ProfileImage { get; set; }
 
     }
 }
